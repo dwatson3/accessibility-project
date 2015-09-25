@@ -1,2 +1,31 @@
+<%= javascript_include_tag "application" %>
+
 <h1> Test </h1>
 
+<h1>Web Speech Twilio Demonstration</h1>
+<div id="status">
+</div>
+<p></p>
+<form action="http://localhost:3000/" method="get">
+  <input name="q" id="input_field" size="100">
+</form>
+<button onclick="reco.toggleStartStop()" style="border: 0; background-color:transparent">
+<%= image_tag "mic.gif" %>
+
+  </button>
+
+  <%= @textinformation %>
+
+<!-- <script src="webspeech.js"></script> -->
+<script>
+var reco = new WebSpeechRecognition();
+reco.statusText('status');
+reco.statusImage('status_img');
+reco.finalResults('input_field');
+
+reco.onEnd = function() {
+  if (reco.final_transcript != '') {
+    input_field.form.submit();
+  }
+};
+</script>
