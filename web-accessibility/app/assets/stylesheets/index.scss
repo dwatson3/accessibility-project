@@ -24,12 +24,18 @@ $main-font: Helvetica, sans-serif;
 $text-decor: none;
 $border-style: 1px #000 solid;
 $padding-style: 2px;
+$link-visited: #000;
 
-.index-project-link {
+.index-project-link, a:visited {
 	text-decoration: $text-decor;
 	border-bottom: $border-style;
 	padding-bottom: $padding-style;
+	color: $link-visited;
 }
+
+// a:visited {
+// 	color: $link-visited;
+// } 
 
 // @mixin standard-links($links) {
 // 	text-decoration: none;
