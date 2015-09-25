@@ -1,9 +1,17 @@
+@import 'normalize';
+
 $medium-teal: #558C89;
 $light-teal: #74AFAD;
 $solo-orange: #D9853B;
-$solo-offwhite: #ECECEA;
+$solo-off-white: #ECECEA;
 
 $main-font: Helvetica, sans-serif;
+
+@mixin rounded-corners($radius: 10px) {
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+}
 
 @mixin left() {
 	float: left;
