@@ -1,26 +1,5 @@
-<h1> Test </h1>
+<%= javascript_include_tag "application" %>
 
-<h1> Test </h1>
-
-<h1> Test </h1>
-
-<!DOCTYPE html>
-<meta charset="utf-8">
-<title>Web Speech API Demo</title>
-
-<style>
-  #results {
-    font-size: 20px;
-    font-weight: bold;
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: left;
-    vertical-align: text-top;
-    min-height: 150px;
-    width: 80%;
-    display: inline-block;
-  }
-</style>
 <h1>Web Speech API Demonstration</h1>
 <div id="status">
 </div>
@@ -30,14 +9,21 @@
   <span id="interim_span" style="color:gray"></span>
 </div>
 <!-- <button onclick="microphoneButton()" style="border: 0; background-color:transparent"> -->
-  <img id="status_img" src="mic.gif" alt="Start"></button>
-<button onclick="emailButton()">Create Email</button>
+  <button>
+   <!--  <img id="status_img" src="mic.gif" alt="Start"> -->
+   <%= image_tag("mic.gif") %>
+  </button>
+
+  <button onclick="emailButton()">
+    Create Email
+  </button>
+
 <div id="div_language">
   <select id="select_language" onchange="updateCountry()"></select>
   <select id="select_dialect"></select>
 </div>
 
-<script src="webspeech.js"></script>
+<!-- <script src="webspeech.js"></script> -->
 <script>
 var reco = new WebSpeechRecognition(window);
 reco.statusText('status');
