@@ -13,10 +13,26 @@ $main-font: Helvetica, sans-serif;
 	-webkit-border-radius: $radius;
 }
 
-@mixin left() {
+@mixin left($left) {
 	float: left;
 }
 
-@mixin right() {
+@mixin right($right) {
 	float: right;
 }
+
+$text-decor: none;
+$border-style: 1px #000 solid;
+$padding-style: 2px;
+
+.index-project-link {
+	text-decoration: $text-decor;
+	border-bottom: $border-style;
+	padding-bottom: $padding-style;
+}
+
+// @mixin standard-links($links) {
+// 	text-decoration: none;
+// 	border-bottom: 1px #000 solid;
+// 	padding-bottom: 2px;
+// }
