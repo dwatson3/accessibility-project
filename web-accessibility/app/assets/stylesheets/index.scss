@@ -1,4 +1,8 @@
-@import 'normalize';
+// @import 'normalize';
+
+* {
+	line-height: 1.5;
+}
 
 $medium-teal: #558C89;
 $light-teal: #74AFAD;
@@ -24,13 +28,36 @@ $main-font: Helvetica, sans-serif;
 $text-decor: none;
 $border-style: 1px #000 solid;
 $padding-style: 2px;
-$link-visited: #000;
+$link-color: #000;
 
-.index-project-link, a:visited {
+$back-color: #fff;
+$weight: bold;
+
+
+.index-project-link {
 	text-decoration: $text-decor;
 	border-bottom: $border-style;
 	padding-bottom: $padding-style;
-	color: $link-visited;
+	color: $link-color;
+}
+
+a:visited {
+	background: $back-color;
+	color: $link-color;
+	font-weight: $weight;
+	text-decoration: $text-decor;
+	border-bottom: $border-style;
+	padding-bottom: $padding-style; 
+}
+
+a:focus, a:hover, a:active {
+	background: $link-color;
+	color: $back-color;
+	font-weight: $weight;
+	text-decoration: $text-decor;
+	border-bottom: $border-style;
+	padding-bottom: $padding-style;
+	padding: 10px;
 }
 
 // a:visited {
