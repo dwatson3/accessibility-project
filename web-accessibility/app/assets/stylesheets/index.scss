@@ -1,0 +1,14 @@
+$medium-teal: #558C89;
+$light-teal: #74AFAD;
+$solo-orange: #D9853B;
+$solo-offwhite: #ECECEA;
+
+$main-font: Helvetica, sans-serif;
+
+@mixin left() {
+	float: left;
+}
+
+@mixin right() {
+	float: right;
+}
