@@ -1,11 +1,10 @@
 class CapstoneController < ApplicationController
 
 def index	
-	render "welcome/index"
+	render "capstone/index"
 end	
 
 def twilio
-
 	if params[:q]
 
 		require 'rubygems' # not necessary with ruby 1.9 but included for completeness
@@ -26,20 +25,21 @@ def twilio
 
 		@textinformation = params[:q]
 
+		render :twilio
 	end
-	render "welcome/twilio"
+	
 end
 
 def email
-	render "welcome/email"
+	render "capstone/email"
 end
 
 def translate
-	render "welcome/translate"
+	render "capstone/translate"
 end
 
 def css
-	render "welcome/css"
+	render "capstone/css"
 end
 
 end
