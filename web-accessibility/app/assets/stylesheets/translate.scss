@@ -1,0 +1,77 @@
+.restaurant-img-One {
+	background-image: url("/images/restaurant-village-germany-chairs.jpg");
+	height: 558px;
+	width: 100%;
+
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*background-size: contain;*/
+}
+
+nav {
+	position: fixed;
+	margin: 0 auto;
+}
+
+li {
+	color: #fff;
+	display: inline;
+	float: right;
+	font-size: 1.2em;
+
+	margin-top: 10px;
+	padding-right: 30px;
+	text-align: center;
+}
+
+.demo-description {
+	/*margin: 0 auto;*/
+	margin-top: 30%;
+	margin-left: 20%;
+	/*text-align: center;*/
+}
+
+.food-img-one {
+	background-image: url("/images/bread-food-plate-toast.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	/*border-radius: 20px;*/
+	margin: 0 auto;
+	margin-top: 15%;
+	width: 600px;
+	height: 400px;
+	/*width: 100%;*/
+}
+
+/*.section-one {
+	margin: 0 auto;
+}*/
+
+.example-text-one {
+	color: blue;
+	font-size: 24px;
+	z-index: 100;
+	position: absolute;
+	top: 465px;
+	left: 150px;
+	/*width: 100%;*/
+}
+
+span.example-text-two {
+	left: 80px;
+	position: relative;
+	top: 20px;
+}
+
+.food-img-two {
+	background-image: url("/images/food-healthy-soup-leek.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	margin: 0 auto;
+	margin-top: 65px;
+	position: relative;
+	width: 600px;
+	height: 400px;
+}
