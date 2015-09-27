@@ -92,6 +92,9 @@ p.example-text-two {
 	position: relative;
 }
 
+ul.contact-info {
+}
+
 ul.contact-info li {
 	color: black;
 	font-size: 16px;
@@ -101,4 +104,13 @@ ul.contact-info li {
 
 li.dots {
 	margin-top: 30px;
+}
+
+.utensils-img {
+	width: 100%;
+	// position: absolute;
+	top: 0;
+	left: 0;
+	
+	// text-align: center;
 }
