@@ -1,4 +1,5 @@
 $wipeout: none;
+$text4img: -1;
 
 .veggie-img {
 	width: 100%;
@@ -51,9 +52,17 @@ li {
 	/*border-radius: 20px;*/
 	margin: 0 auto;
 	margin-top: 15%;
+	position: relative;
 	width: 600px;
 	height: 400px;
+
+	z-index: $text4img;
 	/*width: 100%;*/
+}
+
+.wrapper-div {
+	position: absolute;
+	z-index: $text4img;
 }
 
 /*.section-one {
