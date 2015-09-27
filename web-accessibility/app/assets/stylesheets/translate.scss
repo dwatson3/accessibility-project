@@ -26,15 +26,47 @@ nav.navbar.navbar-inverse {
 	margin-bottom: 0px;
 }
 
-li {
+li:not(.facebook, .twitter, .youtube, .instagram, .yelp) {
 	color: #fff;
-	display: inline;
+	// display: inline;
 	float: right;
 	font-size: 1.5em;
+	list-style-type: none;
 
 	margin-top: 10px;
 	padding-right: 30px;
-	text-align: center;
+	// text-align: center;
+}
+
+.facebook, .twitter, .youtube, .instagram, .yelp {
+	display: inline;
+	padding: 5px;
+}
+
+.social_media ul, .contact-info ul li, .facebook, .twitter, .youtube, .instagram, .yelp {
+ float: none;
+ // display: inline;
+
+ height: 100px;
+ line-height: 100px;
+ list-style-type: none;
+}
+
+.social_media {
+	width: 790px;
+}
+
+.social_media ul li {
+	float: none;
+	display: inline;
+	height: 100px;
+	line-height: 100px;
+	position: relative;
+	right: 30px;
+}
+
+.contact-info, .phone, .dots, .blog, .blog-header {
+	list-style-type: none;
 }
 
 .demo-description {
