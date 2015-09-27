@@ -1,3 +1,5 @@
+$wipeout: none;
+
 .veggie-img {
 	width: 100%;
 	// position: absolute;
@@ -15,6 +17,12 @@
 nav {
 	position: fixed;
 	margin: 0 auto;
+}
+
+nav.navbar.navbar-inverse {
+	border: $wipeout;
+	border-radius: 0px;
+	margin-bottom: 0px;
 }
 
 li {
@@ -77,4 +85,9 @@ p.example-text-two {
 
 .social_media {
 	text-align: center;
+}
+
+.section-one, .section-two {
+	left: 20%;
+	position: relative;
 }
