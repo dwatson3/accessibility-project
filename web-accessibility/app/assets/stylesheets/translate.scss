@@ -52,20 +52,15 @@ li {
 	margin: 0 auto;
 }*/
 
-.example-text-one {
-	color: blue;
+p.example-text-one {
 	font-size: 24px;
-	z-index: 100;
-	position: absolute;
-	top: 465px;
-	left: 150px;
-	/*width: 100%;*/
+	position: relative;
+	text-align: justify;
+	margin-top: 10px;
 }
 
-span.example-text-two {
-	left: 80px;
-	position: relative;
-	top: 20px;
+p.example-text-two {
+	@extend p.example-text-one;
 }
 
 .food-img-two {
