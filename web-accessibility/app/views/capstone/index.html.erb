@@ -1,18 +1,36 @@
 <nav class="navbar navbar-default navbar-fixed-top color">
   <div class="container">
     <li class="descrip home"> Web Accessibility </li>
-    <li class="descrip"> Twilio Demo </li>
-    <li class="descrip"> Google API </li>
-    <li class="descrip"> Multilingual Site </li>
-    <li class="descrip"> ARIA & CSS </li>
+    <li class="descrip"> 
+    	<%= link_to "Twilio Demo", capstone_twilio_path %>
+    </li>
+    
+    <li class="descrip"> 
+			<%= link_to "Google API",
+				capstone_email_path %> 
+		</li>
+    
+    <li class="descrip"> 
+			<%= link_to "Translation",
+				capstone_translate_path %>
+    </li>
+    
+    <li class="descrip"> 
+			<%= link_to "CSS",
+				capstone_css_path %>
+    </li>
+  
+
   </div>
 </nav>
+
+		<%= link_to "Speech to Mobile Text Twilio Demo", capstone_twilio_path, {:class => "index-project-link reverse"} %>
 
 <div id="body">
 	<div class="col-md-10">
 
-	<h1> Test </h1>
-
+<!-- 	<h1> Test </h1>
+ -->
 	<h3> Welcome to my Capstone Project </h3>
 
 	<p class="index-intro"> This demo is an overview of all my apps used for my Web Accessibility Project. The tutorials are included (either here or elsewhere), not sure at this point. </p>
@@ -32,6 +50,8 @@
 	<p> This description is a brief summary of my CSS demo. <span> Learn more about the </span>
 		<%= link_to "CSS Tips for Accessible Web Design", capstone_css_path, {:class => "index-project-link reverse"} %>
 	</p>
+
+	<div class="flag"> </div>
 
 	</div>
 </div>	
