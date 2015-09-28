@@ -34,6 +34,11 @@ $back-color: #fff;
 $weight: bold;
 
 
+#body {
+	// text-align: justify;
+	margin-left: 40px;
+}
+
 .index-project-link {
 	text-decoration: $text-decor;
 	border-bottom: $border-style;
@@ -59,6 +64,24 @@ a:focus, a:hover, a:active {
 	padding-bottom: $padding-style;
 	padding: 10px;
 }
+
+li.descrip, li.descrip.home {
+	margin-top: 30px;
+}
+
+.descrip {
+	color: #fff;
+	display: inline;
+	list-style-type:none;
+	// margin-top: 15%;
+	padding-right: 40px;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.color {
+	background-color: #191919;
+}
+
+// :not(.home) 
 
 // a:visited {
 // 	color: $link-visited;
