@@ -62,7 +62,12 @@
 	float: right;
 }
 
-.fixed {
-	position: fixed;
+.relative {
+	position: relative;
+    top: 88px;
+}
+
+#index-container {
+    margin-top: 5em;
 }
 
