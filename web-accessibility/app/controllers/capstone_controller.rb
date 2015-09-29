@@ -11,8 +11,8 @@ def twilio
 		require 'twilio-ruby'
 
 		# put your credentials here
-		account_sid = 'AC59ab62afc51d409ec8848087d997a822'
-		auth_token = 'e3e0337ebd1836041fd1210bbc9d520e'
+		account_sid = ENV["ACCOUNT_SID"]
+		auth_token = ENV["AUTH_TOKEN"]
 
 		# set up a client to talk to the Twilio REST API
 		@client = Twilio::REST::Client.new account_sid, auth_token
