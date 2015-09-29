@@ -26,19 +26,23 @@
   </div>
 </nav>
 
-<span> Go to the <%= link_to "Email Demo", capstone_email_path %> </span>
+<div id="content">
 
-<h3>Web Speech Twilio Demonstration</h3>
-<div id="status">
+	<h3 class="twilio-title">Web Speech Twilio Demonstration</h3>
+	<div id="status"></div>
+		<p></p>
+
+	<form action="http://localhost:3000/capstone/twilio" method="get">
+  	<input name="q" id="input_field" size="100">
+	</form>
+	
+	<button onclick="reco.toggleStartStop()" style="border: 0; background-color:transparent">
+		<%= image_tag "mic.gif" %>
+	</button>
+
 </div>
-<p></p>
-<form action="http://localhost:3000/capstone/twilio" method="get">
-  <input name="q" id="input_field" size="100">
-</form>
-<button onclick="reco.toggleStartStop()" style="border: 0; background-color:transparent">
-<%= image_tag "mic.gif" %>
 
-  </button>
+<span> Check out the <%= link_to "Email Demo", capstone_email_path, {:class => "twilio-to-email-link"} %> </span>
 
 <!-- @text-information was here as a test to see if data was being grabbed -->
 
