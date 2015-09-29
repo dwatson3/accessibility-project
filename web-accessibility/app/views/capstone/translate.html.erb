@@ -3,22 +3,47 @@
 <%= link_to "Return Home", capstone_path %> <br>
 <%= link_to "CSS Demo", capstone_css_path %>
 
-<!-- 	<div id="container">
-		<div class="restaurant-img-One"> -->
-			<nav class="navbar navbar-inverse">
-				<ul>
+<div id="wrapper">
 
-				<!-- 	<li><a href="chinese.html"> Chinese Version </a></li>
-					<li><a href="spanish.html"> Espanol Version </a></li> -->
+       
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">SB Admin</a>
+            </div>
+				</nav>
+		</div>		
 
-					<li> Home </li>
-					<li> About </li>
-					<li> Gallery </li>
-					<li> Resources </li>
-					<li> Contact </li>
+	<div class="collapse navbar-collapse navbar-ex1-collapse">
+		<ul class="nav navbar-nav side-nav border down fixed">
+			
+			<li>
+				<%= link_to "Twilio Demo", capstone_twilio_path %>
+			</li>
 
-					<li>
+			<li>
+				<%= link_to "Speech-to-Text Email", capstone_email_path %>
+			</li>
+
+			<li>
+				<%= link_to "Google Translate", capstone_translate_path %>
+			</li>
+
+			<li>
+				<%= link_to "ARIA & CSS", capstone_css_path %>
+			</li>
 	
+		</ul>
+	</div>
+	
+	<div class="col-md-4">
+
 					<div id="google_translate_element"></div>
 					<script type="text/javascript">
 						function googleTranslateElementInit() {
@@ -116,4 +141,6 @@
 		</div>
 	</div>
 
+</div> 
+<!-- closes the columns -->
 	<footer class="footer"></footer>

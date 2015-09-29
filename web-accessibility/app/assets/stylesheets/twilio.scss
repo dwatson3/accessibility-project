@@ -1,114 +1,20 @@
-* {
-	line-height: 1.5;
+.navbar-inverse {
+	background-color: none;
 }
 
-$medium-teal: #558C89;
-$light-teal: #74AFAD;
-$solo-orange: #D9853B;
-$solo-off-white: #ECECEA;
-
-$main-font: Helvetica, sans-serif;
-
-@mixin rounded-corners($radius: 10px) {
-	border-radius: $radius;
-	-moz-border-radius: $radius;
-	-webkit-border-radius: $radius;
+.down {
+	top: 15%;
 }
 
-@mixin left($left) {
-	float: left;
-}
-
-@mixin right($right) {
+.righty {
 	float: right;
 }
 
-$text-decor: none;
-$border-style: 1px #000 solid;
-$padding-style: 2px;
-
-$black: #191919;
-$grey: #DFE2DB;
-$yellow: #FFF056;
-$white: #fff;
-$weight: bold;
-
-.container {
-	margin-top: 31.5px;
+.fixed {
+	position: fixed;
 }
 
-.navbar {
-	border: none; 
-  height: 100px;
-  position: relative;
-  text-align: center;
-}
-
-.navbar:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-bottom: 30px solid #fff;
-  border-left: 2400px solid transparent;
-}
-
-li.descrip, li.descrip.home {
-	margin-top: 30px;
-}
-
-.descrip {
-	color: $white;
-	display: inline;
-	list-style-type:none;
-	// margin-top: 15%;
-	padding-right: 40px;
-}
-
-.home {
-	margin-right: 12em;
-}
-
-nav.navbar.navbar-default.navbar-fixed-top.color {
-	background-color: #191919;
-}
-
-// li.descrip,
-// a {
-// 	background: $black;
-// 	font-color: $white;
-// }
-
-// li.descrip a {
-// 	color: #FFF;
-// }
-
-li.descrip a:hover {
-	background: $yellow;
-	color: $black;
-	font-weight: $weight;
-	text-decoration: $text-decor;
-	border-bottom: $border-style;
-	border-radius: 10px;
-	padding-bottom: 7px;
-	padding-top: 7px; 
-}
-
-#content {
+.center {
 	text-align: center;
-}
-
-input#input_field {
-	border-radius: 5px;
-}
-
-.twilio-title {
-	margin-bottom: 20px;
-}
-
-.twilio-to-email-link {
 	margin: 0 auto;
-	text-align: center;
 }
