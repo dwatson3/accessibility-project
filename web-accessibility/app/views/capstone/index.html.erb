@@ -17,54 +17,77 @@
 				</nav>
 		</div>		
 
-	<div class="collapse navbar-collapse navbar-ex1-collapse col-md-4">
-		<ul class="nav navbar-nav side-nav border down relative">
+
+<div id="content-wrapper">
+	
+	<div id="sidebar-wrapper" class="col-md-offset-2">
+	
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
 			
+			<ul class="nav navbar-nav side-nav border down relative">
+			
+				<li>
+					<%= link_to "Twilio Demo", capstone_twilio_path, :class => "index-access-hover" %>
+				</li>
+
+				<li>
+					<%= link_to "Speech-to-Text Email", capstone_email_path, :class => "index-access-hover" %>
+				</li>
+
 			<li>
-				<%= link_to "Twilio Demo", capstone_twilio_path %>
+				<%= link_to "Google Translate", capstone_translate_path, :class => "index-access-hover" %>
 			</li>
 
 			<li>
-				<%= link_to "Speech-to-Text Email", capstone_email_path %>
-			</li>
-
-			<li>
-				<%= link_to "Google Translate", capstone_translate_path %>
-			</li>
-
-			<li>
-				<%= link_to "ARIA & CSS", capstone_css_path %>
+				<%= link_to "ARIA & CSS", capstone_css_path, :class => "index-access-hover" %>
 			</li>
 	
 		</ul>
 	</div>
 
 
-<div id="index-container" class="col-md-8 col-md-offset-2">
-	<div>
-	<h3> Web Accessibility Project </h3>
+<div id="index-content" class="col-md-8 col-offset-2 index-content-down">
+<!-- <span class="glyphicon glyphicon-flash"></span> -->
+	<h3> Web Accessibility </h3>
+	<hr class="color-tag">
 
-	<p class="index-intro"> 
-		This project is dedicated to web accessibility, and how to incorporate more accessibility features into web development. Well-done accessibility can be done by creating a balance between your project’s content and your user’s needs. I’ve included four web applications, showcasing ways to include these features into your own web applications. 
+	<p class="index-intro" style="padding-bottom:15px"> 
+		This project is dedicated to <code>web accessibility</code>, and how to incorporate more accessibility features into web development. Well-done accessibility can be done by creating a balance between your project’s content and your user’s needs. I’ve included four web applications, showcasing ways to include these features into your own web applications. 
 	</p>
 
-	<p> This application combines both Google Speech-to-Text and Twilio APIs. This application turns audio speech and sends it as a text message to a mobile phone. <span> Learn more about the Speech to Mobile Text </span>
-		<%= link_to "Twilio Demo", capstone_twilio_path, {:class => "index-project-link reverse"} %> <br>
+	<h4> Google Speech and Twilio App </h4>
+	<p style="padding-bottom:15px"> This application combines both Google Speech-to-Text and Twilio APIs. This application turns audio speech and sends it as a text message to a mobile phone. <span> Learn more about the Speech to Mobile Text </span>
+		<%= link_to "Twilio Demo", capstone_twilio_path, {:class => "index-project-link reverse"} %>. <br>
 	</p>
 
-	<p> This application combines the power of Google Speech-to-Text API with the functionality of email. Instead of typing your message, you can speak to your computer microphone with the body message. <span> Learn more about the</span>
-		<%= link_to "Speech to Email Demo with Google API", capstone_email_path, {:class => "index-project-link reverse"} %> <br>
+	<h4> Google Speech to Email App </h4>
+	<p style="padding-bottom:15px"> This application combines the power of Google Speech-to-Text API with the functionality of email. Instead of typing your message, you can speak to your computer microphone with the body message. <span> Learn more about the</span>
+		<%= link_to "Speech to Email Demo with Google API", capstone_email_path, {:class => "index-project-link reverse"} %>. <br>
 	</p>
 
-	<p> This application shows the simplicity of adding a Google Translate plug-in to make websites multilingual friendly, and to intice non-English speakers. <span> Learn more about the </span>
-		<%= link_to "Mutlilingual Site", capstone_translate_path, {:class => "index-project-link reverse"} %> <br>
+	<h4> Google Translate for Web Translation </h4>
+	<p style="padding-bottom:15px"> This application shows the simplicity of adding a Google Translate plug-in to make websites multilingual friendly, and to intice non-English speakers. <span> Learn more about creating a </span>
+		<%= link_to "Multilingual Site", capstone_translate_path, {:class => "index-project-link reverse"} %>. <br>
 	</p>
 
-	<p> This application shows some common WIA-ARIA and CSS Accessibility features you can add to your website. <span> Learn more about the </span>
-		<%= link_to "ARIA and CSS for Accessible Web Design", capstone_css_path, {:class => "index-project-link reverse"} %>
+  <h4> WIA-ARIA and CSS </h4>
+	<p style="padding-bottom:15px"> This application shows some common WIA-ARIA and CSS Accessibility features you can add to your website. <span> Learn more about </span>
+		<%= link_to "ARIA and CSS for Accessible Web Design", capstone_css_path, {:class => "index-project-link reverse"} %>.
 	</p>
 
-	<div class="flag"> </div>
+<span tag="index-to-twilio-tag right">
+
+	<p class="p-index-right"> Go to <%= link_to "Twilio Demo", capstone_twilio_path, {:class => "index-project-link reverse right"} %> </p>
+
+		<span class="glyphicon glyphicon-arrow-right"></span>
+</span>
 
 	</div>
-</div>	
+</div> <!-- closing index-content -->
+</div> <!-- closing sidebar wrapper -->
+</div> <!-- closing div content-wrapper -->
+
+
+
+
+
