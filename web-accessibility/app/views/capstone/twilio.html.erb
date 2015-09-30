@@ -11,14 +11,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin</a>
+                <a class="navbar-brand" href="index.html"> Web Accessibility </a>
             </div>
 				</nav>
 		</div>		
 
-	<div class="col-md-3 col-md-offset-2 collapse navbar-collapse navbar-ex1-collapse fixed">
+<div id="content-wrapper">
+
+	<div id="sidebar-wrapper" class="col-md-offset-2">
+
+		<div class="collapse navbar-collapse navbar-ex1-collapse fixed">
+		
 		<ul class="nav navbar-nav side-nav border down">
 			
+			<li>
+				<%= link_to "Home", capstone_path %>
+			</li>
+
 			<li>
 				<%= link_to "Twilio Demo", capstone_twilio_path %>
 			</li>
@@ -36,12 +45,12 @@
 			</li>
 	
 		</ul>
-	</div>
+	</div> <!-- closes sidebar-wrapper -->
 
-
-<div class="content col-offset-9">
+<div id="twilio-content" class="col-md-8 col-offset-2 index-content-down">
 
 	<h3 class="twilio-title">Web Speech Twilio Demonstration</h3>
+	<hr>
 	<div id="status"></div>
 		<p></p>
 
@@ -53,9 +62,11 @@
 		<%= image_tag "mic.gif" %>
 	</button>
 
-</div>
+</div> <!-- closes the twilio content -->
 
 <span> Check out the <%= link_to "Email Demo", capstone_email_path, {:class => "twilio-to-email-link"} %> </span>
+
+</div><!-- closes the content wrapper -->
 
 <!-- @text-information was here as a test to see if data was being grabbed -->
 

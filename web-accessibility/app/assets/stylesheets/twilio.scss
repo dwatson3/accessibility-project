@@ -1,3 +1,71 @@
+@import 'normalize';
+
+* {
+    font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+	line-height: 1.8;
+}
+
+$text-decor: none;
+$border-style: 1px #000 solid;
+$padding-style: 2px;
+
+$black: #191919;
+$grey: #DFE2DB;
+$yellow: #FCF070;
+$white: #fff;
+
+$weight: bold;
+
+
+@media(min-width:768px) {
+    .side-nav {
+        background-color: $yellow;
+        border-radius: 0;
+        border: none;
+
+        bottom: 0;
+        left: 225px;
+        margin-left: -200px;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+
+        position: fixed;
+        top: 40px;        
+        width: 200px;
+    }
+
+    .side-nav>li>a {
+        width: 200px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #000 !important;
+    }
+}
+
+.side-nav>li>ul {
+    padding: 0;
+}
+
+.side-nav>li>ul>li>a {
+    color: $black;
+    display: block;
+    padding: 10px 15px 10px 38px;
+    
+    text-decoration: none;
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
+
+#twilio-content {
+}
+
 .navbar-inverse {
 	background-color: none;
 }
@@ -29,3 +97,4 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 	margin-top: 10%;
 	position: relative;
 }
+
