@@ -63,7 +63,7 @@
 
 			<span class="news-subheader" role="complementary"> Hiring of Detroit veteran John Krafcik indicates keenness to commercialize the technology </span>
 
-			<%= image_tag("road_ready_small.jpg") %>
+			<%= image_tag("road_ready_small.jpg", :title => "Google Self Driving Car Pictured") %>
 			<br>
 			<!-- alt needs to be included here -->
 			
@@ -73,13 +73,26 @@
 
 		<div role="main">
 
-			<p> Google Inc. is ready to turn its self-driving car technology into a business and has hired an auto-industry veteran to run it. </p>
+			<p> <%= link_to "Google Inc.", "http://quotes.wsj.com/GOOG", :target => "_blank" %>
+			is ready to turn its self-driving car technology into a business and has hired an auto-industry veteran to run it. </p>
 
-			<p> Google said John Krafcik, president of online car-shopping service TrueCar Inc., is joining as CEO of its car project in late September. Chris Urmson, the former head of the project, will lead technical development of the autonomous vehicles and software. </p>
+			<p> Google said John Krafcik, president of online car-shopping service 
+			<%= link_to "TrueCar", "http://quotes.wsj.com/TRUE", :target => "_blank" %>
+			Inc., is joining as CEO of its car project in late September. Chris Urmson, the former head of the project, will lead technical development of the autonomous vehicles and software. </p>
 
-			<p> Mr. Krafcik is a mechanical engineer with a business degree who made his early career with a data-driven approach focusing on lean manufacturing. He was at Ford Motor Co. from 1990 to 2004, where he held various product-development leadership positions, including chief engineer for the Expedition and Navigator SUVs. </p>
+			<p> Mr. Krafcik is a mechanical engineer with a business degree who made his early career with a data-driven approach 
+			<%= link_to "focusing on lean manufacturing", "http://blogs.wsj.com/autoshow/2009/02/11/hyundais-acting-us-chief-krafcik-slams-auto-industry/", :target => "_blank" %>. 
 
-			<p> He spent a decade at Hyundai Motor Co., including five years as president and CEO of the U.S. business. He led Hyundai to record sales and boosted the auto maker’s U.S. market share. After the 2008 financial crisis, he oversaw the team that created an “Assurance Program” that let Americans return cars if they lost a job within a year after purchase, helping the company gain sales in a plunging market. His departure after Hyundai didn’t renew his contract in late 2013 came as a shock to the automotive community because of his success. </p>
+			He was at 
+			<%= link_to "Ford Motor Co.", "http://quotes.wsj.com/F", :target => "_blank" %>
+			from 1990 to 2004, where he held various product-development leadership positions, including chief engineer for the Expedition and Navigator SUVs. </p>
+
+			<p> He spent a decade at 
+			<%= link_to "Hyundai Motor Co.", "http://quotes.wsj.com/HYMLY", :target => "_blank" %>, including five years as president and CEO of the U.S. business. He led Hyundai to record sales and boosted the auto maker’s U.S. market share. After the 2008 financial crisis, he oversaw the team that created an “Assurance Program” that let Americans return cars if they lost a job within a year after purchase, 
+			<%= link_to "helping the company gain sales", "http://blogs.wsj.com/drivers-seat/tag/john-krafcik/", :target => "_blank" %>
+		  in a plunging market. His departure after Hyundai 
+			<%= link_to "didn't renew his contract in late 2013", "http://www.wsj.com/articles/SB10001424052702304483804579284540742570318", :target => "_blank" %>
+		  came as a shock to the automotive community because of his success. </p>
 
 			<p> Google doesn’t plan to manufacture its own cars and wants to partner with others to develop the technology, she added.
 
@@ -91,5 +104,5 @@
 		</div>
 
 		<div role="contact">
-			<span> Write to Alistair Barr at alistair.barr@wsj.com and Mike Ramsey at michael.ramsey@wsj.com </span>
+			<span> Write to Alistair Barr at <%= link_to "alistair.barr@wsj.com" %> and Mike Ramsey at <%= link_to "michael.ramsey@wsj.com" %>. </span>
 		</div>
