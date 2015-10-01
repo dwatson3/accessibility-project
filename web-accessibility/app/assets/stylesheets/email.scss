@@ -1,5 +1,6 @@
   #results {
     border: 1px solid #ddd;
+    border-radius: 5px;
     display: inline-block;
     font-size: 20px;
     
@@ -9,7 +10,7 @@
 
     text-align: left;
     vertical-align: text-top;
-    width: 50%;
+    width: 70%;
   }
 
   @import 'normalize';
@@ -78,6 +79,28 @@ $weight: bold;
 }
 
 input#input_field {
+    border-radius: 5px;
+}
+
+.email-content {
+    left: 5%;
+    margin-top: 10%;
+}
+
+.email-mic-button {
+    position: relative;
+    left: 20px;
+    margin-right: 10px;
+    top: 20px;
+}
+
+.create-email-button {
+    position: relative;
+    right: 60px;
+    top: 80px;
+}
+
+.img {
     border-radius: 5px;
 }
 
