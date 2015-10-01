@@ -1,11 +1,46 @@
+.row {
+}
+
+.one {
+
+}
+
 .content-two {
 	left: 55%;
 }
 
 .veggie-img {
-	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
 }
 
-#translation-page-container {
+#translation-content {
+	left: 0%;
+	margin-top: 10%;
+	position: relative;
+}
+
+.utensils-img, .food-img-one, .food-img-two {
+	width: 40%;
+}
+ul .social_media {
 	
+}
+.social_media {
+	width: 790px;
+}
+
+li .social_media_icon {
+	display: inline;
+}
+
+.social_media, .social_media_icon li {
+	display: inline;
+	height: 100px;
+
+	line-height: 100px;
+	list-style-type: none;
+	// position: relative;
+	// right: 30px;
 }
