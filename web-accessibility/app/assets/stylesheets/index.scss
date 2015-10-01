@@ -19,7 +19,7 @@ $weight: bold;
 
 @media(min-width:768px) {
     .side-nav {
-        background-color: $yellow;
+        background-color: $black;
         border-radius: 0;
         border: none;
 
@@ -43,7 +43,9 @@ $weight: bold;
     .side-nav li a:hover,
     .side-nav li a:focus {
         outline: none;
-        background-color: #000 !important;
+        // background-color: #000 !important;
+        background-color: $yellow;
+        color: $black;
     }
 }
 
@@ -71,7 +73,7 @@ a.index-project-link {
 }
 
 .index-access-hover a {
-    color: $black; 
+    color: $yellow; 
 }
 
 .index-access-hover a:hover {   
@@ -105,7 +107,7 @@ a.navbar-brand {
 }
 
 nav.navbar.navbar-inverse.navbar-fixed-top {
-    background-color: $yellow;
+    background-color: $black;
     border: none;
 }
 
