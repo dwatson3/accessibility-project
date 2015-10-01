@@ -23,7 +23,7 @@
 
 	<div id="content-wrapper">
 
-	<div id="sidebar-wrapper" class="col-md-offset-2">
+	<div id="sidebar-wrapper" aria-label="navigation" class="col-md-offset-2">
 
 		<div class="collapse navbar-collapse navbar-ex1-collapse fixed">
 
@@ -52,21 +52,26 @@
 			</ul>
 		</div> <!-- closes sidebar-wrapper -->
 
-		<div class="row col-md-9 aria-css-content aria-css-down">
+		<div class="row col-md-8 col-offset-2 aria-css-content aria-css-down">
 
-		<h3 class="translate-title"> Google Translate Demo </h3>
+		<h1 class="translate-title"> WIA-ARIA & CSS Demo </h1>
 			<hr class="translate-hr col-md-7">
 			<br>
 			
-			<h2> Google Brings in Chief for Self-Driving Cars </h2>
+			<span class="news-title" role="banner"> Google Brings in Chief for Self-Driving Cars </span>
+			<br>
 
-			<h4> Hiring of Detroit veteran John Krafcik indicates keenness to commercialize the technology </h4>
+			<span class="news-subheader" role="complementary"> Hiring of Detroit veteran John Krafcik indicates keenness to commercialize the technology </span>
 
-			<!-- insert image here -->
+			<%= image_tag("road_ready_small.jpg") %>
+			<br>
+			<!-- alt needs to be included here -->
+			
+			<span class="news-article-authors"> By Alastair Barr and Mike Ramsey </span>
 
-			<span> By Alastair Barr and Mike Ramsey </span>
+			<span class="news-article-date"> Sept. 13, 2015 11:04p.m. ET </span>	
 
-			<span> Sept. 13, 2015 11:04p.m. ET </span>
+		<div role="main">
 
 			<p> Google Inc. is ready to turn its self-driving car technology into a business and has hired an auto-industry veteran to run it. </p>
 
@@ -83,5 +88,8 @@
 			<p> Google’s self-driving prototypes are being tested on public roads in urban areas of California and more recently Austin, Texas. But there have been few signs so far that Google is close to making the vehicles in enough volume to create a money-making product or service.
 
 			Google veteran Claire Hughes Johnson joined the car project in January 2014 to work on potential business models, but left nine months later in part because the project was still too far from becoming a viable business. In a 2014 speech, she suggested that Google cars would probably be used as an on-demand service, rather than purchased by individuals.</p>
+		</div>
 
+		<div role="contact">
 			<span> Write to Alistair Barr at alistair.barr@wsj.com and Mike Ramsey at michael.ramsey@wsj.com </span>
+		</div>
