@@ -12,35 +12,54 @@
 .veggie-img {
 	margin: 0 auto;
 	text-align: center;
-	width: 80%;
+	width: 60%;
 }
 
-#translation-content {
-	left: 0%;
-	margin-top: 10%;
-	position: relative;
-}
+// #translation-content {
+// 	left: 0%;
+// 	margin-top: 10%;
+// 	position: relative;
+// }
 
 .utensils-img, .food-img-one, .food-img-two {
 	width: 40%;
 }
-ul .social_media {
-	
-}
+
 .social_media {
-	width: 790px;
+	width: 680px;
 }
 
-li .social_media_icon {
-	display: inline;
-}
-
-.social_media, .social_media_icon li {
+.social_media ul li {
+	float: none;
 	display: inline;
 	height: 100px;
-
 	line-height: 100px;
+}
+
+.contact-info li {
 	list-style-type: none;
-	// position: relative;
-	// right: 30px;
+}
+
+.blog, .blog-header, .utensils-img {
+	list-style-type: none;
+}
+
+.food-img-one {
+	position: relative;
+	top: 30px;
+}
+
+.translate-content-down {
+    left: 10px;
+    margin-top: 70px;
+}
+
+.demo-description {
+	margin-top: 15px;
+	position: relative;
+	right: 15px;
+}
+
+.translate-hr {
+	
 }
