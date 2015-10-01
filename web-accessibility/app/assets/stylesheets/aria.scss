@@ -12,3 +12,9 @@ span.news-title {
 span.news-subheader {
 	font-size: 1.17em;
 }
+
+.hidden {
+	position: absolute;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+}
