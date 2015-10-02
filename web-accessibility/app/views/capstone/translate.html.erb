@@ -68,42 +68,29 @@
 
 			<%= image_tag("food-vegetables-meal-kitchen.jpg", :class => "veggie-img") %>
 
-		<div>
+		<!-- <div> -->
 			<p class="demo-description col-md-8"> This demo was created to showcase how to change your site's language. This demo shows how to change the main language english - to a choice of spanish, or chinese. This site will have all the same design and functionality.</p>
-	</div> <!-- closes row		 -->
 
-<!-- 	<div class="row two col-md-9">
-				<ul class="social_media">
-					<li>
-						<%= image_tag("facebook.png") %>
-					</li>
-				
-					<li>
-						<%= image_tag("twitter.png") %>
-					</li>
-				
-					<li>
-						<%= image_tag("youtube.png") %>
-					</li>
-				
-					<li>
-						<%= image_tag("instagram.png") %>
-					</li>
+<span class="translate-to-email-tag"> 
+  <p class="p-twilio-left col-md-8">
 
-					<li>
-						<%= image_tag("yelp.png") %>
-					</li>
-				</ul>
-		</div>  --> <!-- closes row	 -->
+    <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
 
-		<!-- 	<div class="row three col-md-9">
-				<ul class="contact-info">
-					<li class="phone"> 855-555-1234 / info@bilingualdemo.com</li>
+    Go to <%= link_to "Email Demo",
+    capstone_twilio_path, {:class => "twilio-project-link"} %>
+  </p>
 
-					<li class="dots">
-						****************************************************
-					</li>
-			</div>  --><!-- closes row -->
+  <p class="p-translate-right col-md-8 right">
+
+  Go to <%= link_to "ARIA & CSS Demo",
+  capstone_css_path, {:class => "translate-project-link"} %>
+    
+    <i class="fa fa-long-arrow-right" aria-hidden="true"> </i>
+  </p>
+</span>
+
+</div> <!-- closes row		 -->
+
 
 </div> <!-- closes the columns -->
 

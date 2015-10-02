@@ -49,7 +49,7 @@ $weight: bold;
 
         position: fixed;
         top: 88px;        
-        width: 225px;
+        width: 240px;
     }
 
     .side-nav>li {
@@ -58,7 +58,7 @@ $weight: bold;
 
     .side-nav>li>a {
         color: $black;
-        width: 225px;
+        width: 240px;
     }
 
     .side-nav li a:hover,
@@ -97,7 +97,6 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
     border: 5px $grey solid;
 }
 
-
 input#input_field {
     border-radius: 5px;
 }
@@ -131,4 +130,12 @@ p.p-twilio-left {
 .twilio-sidebar-down {
     // position: relative;
     // top: 88px;
+}
+
+a.twilio-project-link {
+    @extend a.twilio-to-email-link;
+}
+
+a.translate-project-link {
+    @extend a.twilio-to-email-link;
 }

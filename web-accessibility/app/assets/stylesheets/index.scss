@@ -71,6 +71,13 @@ $weight: bold;
     color: #fff;
 }
 
+a.navbar-brand {
+   color: $black !important;
+   font-weight: bold;
+   left: 25px; 
+   position: relative;
+}
+
 a.index-project-link {
     color: $black;
     text-decoration: none;
@@ -85,29 +92,19 @@ a.index-project-link {
 .index-access-hover a:hover {   
 }
 
-a.navbar-brand {
-   color: $black !important;
-   font-weight: bold;
-   left: 25px; 
-   position: relative;
-}
-
 .center {
 	text-align: center;
 }
-
-// .border {
-// 	border-radius: 0 10px 0 0;
-// }
 
 .index-content-down {
     left: 10px;
     margin-top: 70px;
 }
 
-// .index-arrow-icon {
-//     float: right;
-// }
+@media(min-width: 1540px) {
+    #index-content {
+    }
+}
 
 .p-index-right {
     padding-right: 5px;
