@@ -21,9 +21,10 @@ $weight: bold;
     .side-nav {
         background-color: $yellow;
         border-radius: 0;
-        border: none;
+        border: 5px $grey solid;
 
         bottom: 0;
+        font-weight: bold;
         left: 225px;
         margin-left: -200px;
 
@@ -32,12 +33,12 @@ $weight: bold;
         padding-bottom: 40px;
 
         position: fixed;
-        top: 40px;        
-        width: 200px;
+        top: 88px;        
+        width: 240px;
     }
 
     .side-nav>li>a {
-        width: 200px;
+        width: 240px;
     }
 
     .side-nav li a:hover,
@@ -45,6 +46,16 @@ $weight: bold;
         outline: none;
         background-color: #000 !important;
     }
+}
+
+.down {
+    // position: relative;
+    top: 45%;
+}
+
+.relative {
+    // position: relative;
+    top: 88px;
 }
 
 .side-nav>li>ul {
@@ -89,9 +100,13 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 	height: none;
 }
 
+ul.nav.navbar-nav.side-nav.border {
+    top: 88px;
+}
+
 #twilio-content {
 	left: 10px;
-	margin-top: 70px;
+	// margin-top: 70px;
 	position: relative;
 }
 
@@ -104,5 +119,10 @@ a.twilio-to-email-link {
 
 p.twilio-left {
     margin-top: 20px;
+}
+
+.twilio-sidebar-down {
+    position: relative;
+    top: 88px;
 }
 
