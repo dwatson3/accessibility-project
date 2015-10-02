@@ -6,9 +6,9 @@ Correctly Structure Headings in HTML files
 
 Screen reader users typically use the heading HTML structure to navigate through content. When headings are set up correctly on a website, screen readers can easily interpret the content of your website. 
 
-For example, use the h1 tag for the main title of your page. Avoid using the <h1> tag for anything other than the title of your website and other individual pages. 
+For example, use the h1 tag for the main title of your page. Avoid using the h1 tag for anything other than the title of your website and other individual pages. 
 
-If there are words on the page that you want to appear as big or bold as a header purely for decoration, make sure to style them appropriately with CSS with classes or ids, rather than the <h1> tag. 
+If there are words on the page that you want to appear as big or bold as a header purely for decoration, make sure to style them appropriately with CSS with classes or ids, rather than the h1 tag. 
 
 Do Make Sure to Include Alt Text Information for Images
 
