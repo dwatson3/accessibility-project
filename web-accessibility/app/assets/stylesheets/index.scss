@@ -19,11 +19,12 @@ $weight: bold;
 
 @media(min-width:768px) {
     .side-nav {
-        background-color: $black;
+        background-color: $yellow;
         border-radius: 0;
-        border: none;
+        border: 5px $grey solid;
 
         bottom: 0;
+        font-weight: bold;
         left: 225px;
         margin-left: -200px;
 
@@ -33,19 +34,24 @@ $weight: bold;
 
         position: fixed;
         top: 40px;        
-        width: 200px;
+        width: 225px;
+    }
+
+    .side-nav>li {
+        border: 2px $grey solid;
     }
 
     .side-nav>li>a {
-        width: 200px;
+        width: 225px;
+        color: $black;
     }
 
     .side-nav li a:hover,
     .side-nav li a:focus {
         outline: none;
         // background-color: #000 !important;
-        background-color: $yellow;
-        color: $black;
+        background-color: $black;
+        color: $white;
     }
 }
 
@@ -80,7 +86,8 @@ a.index-project-link {
 }
 
 a.navbar-brand {
-   font-color: $black;
+   color: $black !important;
+   font-weight: bold;
    left: 25px; 
    position: relative;
 }
@@ -107,8 +114,9 @@ a.navbar-brand {
 }
 
 nav.navbar.navbar-inverse.navbar-fixed-top {
-    background-color: $black;
-    border: none;
+    background-color: $yellow;
+    border: 5px $grey solid;
+
 }
 
 .right {
@@ -135,5 +143,11 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 
 #index-container {
     margin-top: 5em;
+}
+
+.index-bookmark {
+    border: 2px $grey solid;
+    color: $black;
+    margin-right: 10px;
 }
 

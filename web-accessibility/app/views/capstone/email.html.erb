@@ -1,5 +1,7 @@
 <%= javascript_include_tag "application" %>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
   <div id="wrapper">
 
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -55,6 +57,7 @@
 
 <h1>Web Speech API Demonstration</h1>
 <hr>
+
 <div id="status">
 </div>
 <p>
@@ -77,8 +80,32 @@
   <select id="select_dialect"></select>
 </div>
 
+<span class="email-to-twilio-tag"> 
+  <p class="p-twilio-left">
+
+    <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+
+    Go to <%= link_to "Twilio Demo",
+    capstone_twilio_path, {:class => "twilio-project-link"} %>
+  </p>
+</span>
+
+<span class="email">
+  
+</span>
+
 </div>
 </div>
+
+  <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+
+
+
+
+
+
+
+
 
 <!-- <script src="webspeech.js"></script> -->
 <script>

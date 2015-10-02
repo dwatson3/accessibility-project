@@ -1,5 +1,7 @@
 <%= javascript_include_tag "application" %>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
   <div id="wrapper">
 
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -63,7 +65,19 @@
 	</button>
 
 	<br>
-	<span> Check out the <%= link_to "Email Demo", capstone_email_path, {:class => "twilio-to-email-link right"} %> </span>
+
+	<span tag="twilio-to-index-tag">
+
+		<p class="p-twilio-left left">
+			<i class="fa fa-long-arrow-left" aria-hidden="true"> </i>
+				Go to <%= link_to "Home", capstone_path, {:class => "return-index-link"} %>
+		</p>
+
+		<p class="p-email-right right">
+			  Go to <%= link_to "Email Demo", capstone_email_path, {:class => "twilio-to-email-link"} %> 
+			  
+			  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+		</p>
 
 </div> <!-- closes the twilio content -->
 </div><!-- closes the content wrapper -->

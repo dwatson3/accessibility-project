@@ -48,8 +48,10 @@
 	</div> <!-- closes sidebar-wrapper -->
 
 <div id="index-content" class="col-md-8 col-offset-2 index-content-down">
-<!-- <span class="glyphicon glyphicon-flash"></span> -->
-	<h3> Web Accessibility </h3>
+
+	<h3>
+		<i class="fa fa-bookmark index-bookmark" aria-hidden="true"> </i>
+	 Web Accessibility </h3>
 	<hr class="color-tag">
 
 	<p class="index-intro" style="padding-bottom:15px"> 
@@ -76,12 +78,13 @@
 		<%= link_to "ARIA and CSS for Accessible Web Design", capstone_css_path, {:class => "index-project-link"} %>.
 	</p>
 
-<span tag="index-to-twilio-tag right">
+<span tag="index-to-twilio-tag">
 
-	<p class="p-index-right"> Go to <%= link_to "Twilio Demo", capstone_twilio_path, {:class => "index-project-link right"} %> 	arrow goes here </p>
+	<p class="p-index-right right"> Go to the <%= link_to "Twilio Demo", capstone_twilio_path, {:class => "index-project-link"} %> 
+	<!-- </p> -->
 
 	<i class="fa fa-long-arrow-right" aria-hidden="true"> </i>
-
+	</p>
 
 </span>
 
