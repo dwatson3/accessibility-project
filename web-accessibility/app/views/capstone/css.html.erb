@@ -73,7 +73,7 @@
 
 			<span class="news-article-date"> Sept. 13, 2015 11:04p.m. ET </span>	
 
-		<div role="main">
+		<div role="main" class="article-content col-md-9">
 
 			<p> 
 				<%= link_to "Google Inc.", "http://quotes.wsj.com/GOOG", :class => "aria-link aria-reverse-color", :target => "_blank" %>
@@ -171,8 +171,26 @@
 			<p> Google’s self-driving prototypes are being tested on public roads in urban areas of California and more recently Austin, Texas. But there have been few signs so far that Google is close to making the vehicles in enough volume to create a money-making product or service.
 
 			Google veteran Claire Hughes Johnson joined the car project in January 2014 to work on potential business models, but left nine months later in part because the project was still too far from becoming a viable business. In a 2014 speech, she suggested that Google cars would probably be used as an on-demand service, rather than purchased by individuals.</p>
-		</div>
+		</div> <!-- closes article content -->
 
-		<div role="contact">
+		<div role="contact" class="col-md-9">
 			<span> Write to Alistair Barr at <%= link_to "alistair.barr@wsj.com", :class => "aria-email-link" %> and Mike Ramsey at <%= link_to "michael.ramsey@wsj.com", :class => "aria-email-link" %>. </span>
 		</div>
+
+		<span class="translate-to-email-tag"> 
+  <p class="p-twilio-left col-md-8">
+
+    <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+
+    Go to <%= link_to "Translate Demo",
+    capstone_translate_path, {:class => "twilio-project-link"} %>
+  </p>
+
+  <p class="p-translate-right col-md-8 right">
+
+  Go to <%= link_to "Home",
+  capstone_path, {:class => "translate-project-link"} %>
+    
+    <i class="fa fa-long-arrow-right" aria-hidden="true"> </i>
+  </p>
+</span>
