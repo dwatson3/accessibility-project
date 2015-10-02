@@ -17,7 +17,7 @@ $white: #fff;
 $weight: bold;
 
 
-@media(min-width:768px) {
+@media(min-width:999px) {
     .side-nav {
         background-color: $yellow;
         border-radius: 0;
@@ -97,12 +97,15 @@ a.index-project-link {
 }
 
 .index-content-down {
-    left: 10px;
+    left: 90px;
     margin-top: 70px;
+    width:80%;
 }
 
 @media(min-width: 1540px) {
     #index-content {
+    
+
     }
 }
 
