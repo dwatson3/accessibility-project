@@ -2,7 +2,7 @@
 
 * {
     font-family: Verdana, Tahoma, Georgia;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 $text-decor: none;
@@ -99,15 +99,9 @@ a.index-project-link {
 .index-content-down {
     left: 90px;
     margin-top: 70px;
-    width:80%;
+    width: 80%;
 }
 
-@media(min-width: 1540px) {
-    #index-content {
-    
-
-    }
-}
 
 .p-index-right {
     padding-right: 5px;
@@ -151,6 +145,20 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 }
 
 .further-reading {
-    margin-top: 5%;
+    margin-top: 10%;
+}
+
+span.index-further-reading {
+    font-weight: bold;
+    font-size: 0.83em;
+    position: relative;
+    bottom: 10px;
+}
+
+span.index-access-report {
+    font-weight: bold;
+    font-size: 1.12em;
+    position: relative;
+    bottom: 5px;
 }
 

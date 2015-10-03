@@ -17,7 +17,7 @@ $white: #fff;
 $weight: bold;
 
 
-@media(min-width:768px) {
+@media(min-width:999px) {
     .side-nav {
         background-color: $yellow;
         border-radius: 0;
@@ -37,25 +37,22 @@ $weight: bold;
         width: 240px;
     }
 
+    .side-nav>li {
+        border: 2px $grey solid;
+    }
+
     .side-nav>li>a {
+        color: $black;
         width: 240px;
     }
 
     .side-nav li a:hover,
     .side-nav li a:focus {
         outline: none;
-        background-color: #000 !important;
+        // background-color: #000 !important;
+        background-color: $black;
+        color: $white;
     }
-}
-
-.down {
-    // position: relative;
-    top: 45%;
-}
-
-.relative {
-    // position: relative;
-    top: 88px;
 }
 
 .side-nav>li>ul {
@@ -74,8 +71,25 @@ $weight: bold;
     color: #fff;
 }
 
+a.navbar-brand {
+    color: $black !important;
+    font-weight: bold;
+    left: 25px;
+    position: relative;
+}
+
 .navbar-inverse {
 	background-color: none;
+}
+
+.down {
+    // position: relative;
+    top: 45%;
+}
+
+.relative {
+    // position: relative;
+    top: 88px;
 }
 
 .down {
@@ -104,10 +118,11 @@ ul.nav.navbar-nav.side-nav.border {
     top: 88px;
 }
 
-#twilio-content {
-	left: 10px;
+div#twilio-content {
+	left: 90px;
 	// margin-top: 70px;
-	position: relative;
+	// position: relative;
+    width: 80%;
 }
 
 a.twilio-to-email-link {
