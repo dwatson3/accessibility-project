@@ -70,6 +70,14 @@
 		<%= image_tag "mic.gif" %>
 	</button>
 
+<p class="twilio-move-p">
+		How to use Google Web Speech API with Twilio API. This app uses Google Speech Recognition Software to send as output to a mobile phone with the Twilio API. 
+	</p>
+
+	<p class="twilio-move-p">
+		This project was inspired by the use of technology being cross-platform. For example, this demonstration is being used from my laptop, but it can be used in a browser on a mobile phone.
+	</p>
+
 	<br>
 
 	<span tag="twilio-to-index-tag">
@@ -87,11 +95,218 @@
 
 	</span>	
 
-<div class="further-reading">
-	<span> Tutorial: </span> <br>
-	<span> Incorporating Web Speech Api with Twilio Communications API </span> <br>
-	<span> Overview on this project and how it was built will go here. </span>
+<div class="twilio-further-reading">
+	
+	<span class="twilio-further-reading"> 
+		Further Reading:
+	</span> <br>
+
+	<span class="twilio-report"> Tutorial: </span> <br>
+	
+	<span class="twilio-report"> Incorporating Web Speech Api with Twilio Communications API </span> <br>
+	
+	<p class="twilio-move-p">
+		How to use Google Web Speech API with Twilio API. This app uses Google Speech Recognition Software to send as output to a mobile phone with the Twilio API. 
+	</p>
+
+	<p class="twilio-move-p">
+		This project was inspired by the use of technology being cross-platform. For example, this demonstration is being used from my laptop, but it can be used in a browser on a mobile phone.
+	</p>
+
+	<p class="twilio-move-p">
+		Or perhaps by a user that doesn't have a smart phone, or doesn't have a smart phone with SIRI capability. Either way, users who don't have a phone or phone capabilities can use this demo. 
+	</p>
+
+	<p class="twilio-move-p">
+		This demo is made possible with the use of Rails, I incorporated the Google Web Speech API into my twilio.html.erb file.
+	</p>
+
+	<span><strong> Directions: </strong></span>
+
+	<p class="twilio-move-p">
+		Starting out, Google provides a helpful tutorial on how to use their speech-to-text API. I will walk you through how the code is working. You need to download the codelab files from the tutorial to see the various speech-to-text demos.
+	</p>
+
+	<p class="twilio-move-p">
+		Once you have your basic code in place with HTML and JavaScript, you can style your speech-to-text API in whichever layout you choose - whether it be Bootstrap, CSS, or Sass. In this case, I am using Sass and Bootstrap. The code comes with a reset.css file, as well as some styling incorporated into the HTML file.
+	</p>
+
+	<p class="twilio-move-p">
+		In this demo I used the provided code from codelab1solution.html into my index.html.erb file. I created three separate files using HTML, CSS, and JavaScript, as well as including images and the webspeech.js file.
+	</p>
+
+	<p class="twilio-move-p">
+		Looking at the HTML code provided in the codelab1solution.html file, let's check out how this code is working:
+	</p>
+
+	<span> < form action="http://localhost:3000/capstone/twilio" method="get" >
+  	< input name="q" id="input_field" size="100" >
+< /form > </span>
+
+	<p class="twilio-move-p">
+		The form get method is retrieving the input named "q" from the input field. Input q is standing as our user's input. Below the previous code you'll find the code button with the JavaScript function reco.toggleStartStop(). Styling on this button is applied with border, and transparent as the background color. The image tag "mic.gif" is acting as the button.
+	</p>
+
+	<span>
+			< form action="http://google.com/search" method="get" >
+  	< input name="q" id="input_field" size="100">
+	</form >
+
+< button onclick="reco.toggleStartStop()" style="border: 0; background-color:transparent" >
+  	< img id="status_img" src="mic.gif" alt="Start" >
+  < /button>
+	</span>
+
+	<p class="twilio-move-p"> This script tag is calling in the webspeech.js file. </p>
+
+	<span> 
+	< script src="webspeech.js">< /script> 
+	</span>
+
+	<p class="twilio-move-p">
+		At the end of this html file, apply the script tag. This script file is calling the var reco, with the JavaScript function WebSpeechRecognition().
+	</p>
+
+	<p class="twilio-move-p">
+		In the webspeech.js file, we see that this Javascript function is creating and returning the new WebSpeechRecognition object. 
+	</p>
+
+	<p class="twilio-move-p">
+		reco.onEnd is holding a function with a boolean statement saying if the reco.final_transcript is not equal to an empty value, submit the user's input to the form. 
+	</p>
+
+	<span>
+		<script>
+			var reco = new WebSpeechRecognition();
+			reco.statusText('status');
+			reco.statusImage('status_img');
+			reco.finalResults('input_field');
+
+			reco.onEnd = function() {
+  			if (reco.final_transcript != '') {
+    			input_field.form.submit();
+  			}
+			};
+		</script>		
+	</span>
+
+	<p class="twilio-move-p">
+		In my controller file in Rails, I created a file called demo_controller.rb.
+	</p>
+
+	<p class="twilio-move-p">
+		When setting up my index controller, I placed my twilio API inside my index controller. 
+		I set an if boolean statement, stating if the params[:q] is called from my user input's form. 
+	</p>
+
+	<p class="twilio-move-p">
+		You can sign up for a free Twilio trial, and with that get a free phone number to send your input data to.
+	</p>
+
+	<p class="twilio-move-p">
+		Since I am using Ruby on Rails, I followed the Ruby documentation on how to apply the following code to get the API working. 
+	</p>
+
+	<p class="twilio-move-p">
+	<code>
+		if params[:q] <br>
+	</code>
+	</p>
+
+	<p>
+	<code>
+		require 'rubygems' # not necessary with ruby 1.9 but included for completeness <br>
+		require 'twilio-ruby' <br>
+	</code>
+	</p>
+
+	<p>
+	<code>
+		# put your credentials here <br>
+		account_sid = ENV["ACCOUNT_SID"] <br>
+		auth_token = ENV["AUTH_TOKEN"] <br>
+	</code>
+	</p>
+
+	<p>
+	<code>
+		# set up a client to talk to the Twilio REST API <br>
+		@client = Twilio::REST::Client.new <br>account_sid, auth_token <br>
+	</code>
+	</p>
+
+	<p>
+	<code>
+		message = @client.account.messages.create(:body => params[:q], <br>
+			:to => "+15303015894", <br>
+			:from => "+15307630890") <br>
+	</code>
+	</p>
+
+	<p>
+	<code>
+		puts message.sid <br>
+	</code>
+	</p>
+
+	<p>
+	<code>
+		@textinformation = params[:q] <br>
+	</code>
+	</p>
+
+	<p>
+	<code>
+		render :twilio <br>
+		end <br>
+	</code>	
+	</p>
+
+	<p class="aria-move-p">
+		 If input is being passed into params[:q]
+	</p>
+
+	<p>
+		requiring the 'rubygems', <br>
+ 		requiring 'twilio-ruby', <br>
+		credentials are added in with your account information.
+	</p>
+
+	<p>
+		account_sid = #account_sid info goes here <br>
+		auth_token = #auth_token info goes here <br>
+	</p>
+
+	<p>
+		Client is setup to talk to the Twilio REST API.<br>
+		@client = Twilio::REST::Client.new <br>
+		account_sid, auth_token <br>
+	</p>
+
+	<p>
+		The message variable is calling the create message with this account:
+	</p>
+
+	<p>
+		 message = @client.account.messages.create(:body => params[:q], <br>
+		:to => "+18005551234", #phone number example <br>
+		:from => "+18005436789") #phone number example <br>
+	</p>
+
+	<p class="twilio-move-p">
+		The message is then sent out with message.sid, with the message authorized with the account_sid number information.
+	</p>
+
+	<p class="twilio-move-p">
+		This is how I combined both APIs, this app sends a voice message directly to the number listed. 
+	</p>
+
 </div>
+
+
+
+
+
 
 </div> <!-- closes the twilio content -->
 </div><!-- closes the content wrapper -->

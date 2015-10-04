@@ -136,12 +136,42 @@ a.return-index-link {
     @extend a.twilio-to-email-link;
 }
 
-p.twilio-left {
-    margin-top: 20px;
-}
+// p.twilio-left {
+//     margin-top: 20px;
+// }
 
 .twilio-sidebar-down {
     position: relative;
     top: 88px;
+}
+
+.twilio-further-reading {
+    margin-top: 30%;
+}
+
+span.index-further-reading {
+    font-weight: bold;
+    font-size: 0.83em;
+    position: relative;
+    bottom: 10px;
+}
+
+span.index-access-report {
+    font-weight: bold;
+    font-size: 1.12em;
+    position: relative;
+    bottom: 5px;
+}
+
+span.twilio-further-reading {
+    @extend span.index-further-reading;
+}
+
+span.twilio-report {
+   @extend span.index-access-report;
+}
+
+p.twilio-move-p {
+    margin-top: 20px;   
 }
 

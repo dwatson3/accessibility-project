@@ -1,6 +1,6 @@
 Tutorial: 
 
-How to use google web speech api with twilio api. Using speech recognition software to send as output to a mobile phone. 
+How to use Google Web Speech API with Twilio API. This app uses Google Speech Recognition Software to send as output to a mobile phone with the Twilio API. 
 
 This project was inspired by the use of technology being cross-platform. For example, this demonstration is being used from my laptop, but it can be used in a browser on a mobile phone.
 
