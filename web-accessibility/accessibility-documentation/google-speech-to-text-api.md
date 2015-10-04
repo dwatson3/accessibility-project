@@ -44,13 +44,11 @@ The onclick button responds to the JavaScript function for microphoneButton(). T
 
 Step 3: Add Status Text for the user.
 
-The <div> element displays status information, and is placed above the div with an id of “status.” 
+The <code><div></code> element displays status information, and is placed above the div with an id of “status.” 
 
 This corresponds to reco variable var reco, and reco.statusText.
-
   
 The microphone button in your HTML performs a search after a successful speech recognition session. The callback function for the onEnd event checks to see if any results were returned, and if they were returned, the form is submitted.
-
 
 When the user has the option of selecting a language, the script file is populating the select option with the various language options. The languages are included with their BCP47 tags, also known as a IETF language tag. This is an abbreviated language code, for example “en” for English or “pt-BR” for Brazilian Portuguese. 
 
