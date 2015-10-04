@@ -56,7 +56,7 @@
 
 		<div class="row col-md-8 col-offset-2 aria-css-content aria-css-down">
 
-		<h1 class="translate-title"> WIA-ARIA & CSS Demo </h1>
+		<h1 class="translate-title"> <i class="fa fa-bookmark" aria-hidden="true"> WIA-ARIA & CSS Demo </h1>
 			
 			<hr class="translate-hr col-md-7"> <br>
 			
@@ -198,116 +198,275 @@
 
 <div class="further-reading col-md-8">
 
-<span>Tips on incorporating CSS and WIA-ARIA standards for Accessibility</span>
+<span>
+	Applying WAI-ARIA and CSS to improve Web Accessibility
+</span>
 
-<p>In this tutorial, I’ll be going over how to use CSS to improve the usability and accessibility of your website.</p> 
+<p>
+	In this tutorial, I’ll be going over how to apply WIA-ARIA standards as well as CSS features to improve the accessibility of your webpage.
+</p> 
 
-<p>Correctly Structure Headings in HTML files</p>
+<p>What is WAI-ARIA, and what is it used for?
+</p>
 
-<p>Screen reader users typically use the heading HTML structure to navigate through content. When headings are set up correctly on a website, screen readers can easily interpret the content of your website.</p> 
+<p>
+	WAI-ARIA stands for the Web Accessibility Initiative - Accessible Rich Internet Applications, being technical standards that increase the accessibility of your web page. 
+</p> 
 
-<p>For example, use the h1 tag for the main title of your page. Avoid using the h1 tag for anything other than the title of your website and other individual pages.</p> 
+<p>
+	WAI-ARIA standards help screen reader users structure web content and navigate through sections of web content. 
+</p> 
 
-<p>If there are words on the page that you want to appear as big or bold as a header purely for decoration, make sure to style them appropriately with CSS with classes or ids, rather than the h1 tag.</p> 
+<p>
+	What are screen readers?
+</p> 
 
-<p>Do Make Sure to Include Alt Text Information for Images</p>
+<p>
+	Screen readers are software programs that help blind or visually disabled users read the text displayed on the computer screen with an audio voice or a braille display. 
+</p>
 
-<p>Including the appropriate alt text information for images. When alt text is provided for images, screen readers can understand the message conveyed by the use of the images on the web page. For example, alt text information would be necessary for informative images, like infographics. Also, if the image includes text, that text should be included in the alt. For example:</p>
+<p>
+	Screen readers are used by people with visual disabilties. Visually impaired users can access web content with the use of screen readers.
+</p>
 
-<img src="smiley.gif" alt="Smiley face">
+<p>
+	Screen reader users experience web pages by hearing the title of the web page, then the following text in the order that it appears in the document. 
+</p>
 
+<p>
+	For screen readers, web content is text-based, and it doesn't matter if text is on the left, right, or any other position on a page. Artistic or visual design doesn't matter to screen readers, neither adding nor taking away from the experience. Screen readers are meant to read text content.
+</p> 
 
-<p>However, if there is an image used purely for decorative purposes, the alt text can be left empty so that the screen reader can read the important information on the webpage.</p> 
+<p>
+	Testing your web content with screen readers gives developers the chance to evaluate content from a perspective of a blind user. Screen readers are good evaluators as to how accurate your image alternative text is, as well as identifying any issues involving elements, reading order, etc on a webpage. 
+</p>
 
-<p>When an image is the only content of a link, the screen readers will read that file name if alt text is not included. When images are included as links, always provide alt text.</p>
+<p>
+	The ARIA navigation feature I will be covering in this tutorial are ARIA landmark roles. 
+</p>
 
-<p>Properly Describe Links On Your Webpage</p>
-
-<p>Use descriptive text information that describes where the link goes to. Give your links descriptive names.</p> 
+<p>
+	ARIA landmark roles help screen readers navigate through sections of page content. In addition, there are many other ARIA features that can be found at the Web Accessibility Initiative. 
+</p> 
 
 <p>For example, creating a “click here” link is not considered effective, and isn’t useful for a screen reader user. The most important context of the link should be introduced first, because screen readers will usually direct to the links list by searching via the first letter.</p> 
 
-<p>For example, if you are pointing visitors to a page called “About Us”:</p>
-<p>Avoid saying: “Click here to read about our company.”</p>
-<p>Instead, say: “To learn more about our company, read About Us.”</p>
+<p>
+	There are 8 ARIA landmarks that you can apply to HTML5 Elements.
+</p>
 
-<p>Color Contrast Tips</p>
+<p> The types are: </p>
 
-<p>It’s important to make sure that the look and feel of your website works for all diverse visual users. There are ways to check if there is sufficient color contrast for web content.</p>
+<p>
+	<ul>
+	 <li>banner, which is <header> </li>
+	 <li> complementary, which is <aside> </li>
+	 <li> contentinfo, which is <div> acting as the footer </li>
+	 <li> form, which is <form> or <div> </li>
+	 <li> main, which is <main> </li>
+	 <li> navigation, which is <nav> </li>
+	 <li> search, which is <form> or <div> </li>
+	 <li> and application, which is <div> </li>
+  </ul> 
+</p>
 
-<p>To make sure that there is a minimum color-contrast ratio for both normal and large text on a background.</p>  
+<p>
+	For the main heading title of your webpage, apply a <div role="banner"> to structure your title content.
+</p>
 
-<p>Use Simulators for a design review to create empathy and the web design differently. Check the color contrast to confirm that the web design meets the minimum color-contrast ratio of the WCAG 2.0 AA. The WCAG 2.0 AA color-contrast ratio is 4.5 to 1 for normal text and 3 to 1 for large text.</p> 
+<p>	
+	For example, <div role="banner"> Banner Here </div>
+</p>
 
-<p>Two resources you can use:</p>
+<p>
+	For the navigation bar of your web page, apply a <div role="navigation"> for screen readers to access the navigation bar. 
+</p>
 
-<p>WebAIM Color Contrast Checker, a browser-based resource to test color codes specified in hexadecimal values.</p>
+<p>
+	For the main content of your web page, apply a <div role="main"> in order to set hierarchal importance on your page.
+</p>  
 
-<p>The Paciello Group’s Colour Contrast Checker, an application available for Macs or PCs, which tests color codes with RGB values.</p> 
+<p>
+	For the secondary content on your web page, apply a <div role="complementary">.
+</p> 
 
-<p>Testing Color Codes for Web Designs</p>
+<p>
+	If you have a form on your web page, apply a <div role="form">. 
+</p>
 
-<p>To check font colors against color backgrounds, you can use the resource WebAIM Color Contrast Checker to test samples.</p> 
+<p>
+	For a search form, place a <div role="search"> around the search bar. 
+</p>
 
-<p>Improving Font Readability using the Line-Height Property</p>
+<p>
+	For the footer of your webpage that usually contains contact or copyright information, place a <div role="contentinfo"> around it.
+</p> 
 
-<p>Not only do you want your focus to be on making your font look nice, but it’s important to improve the readability. You can do this by adjust the line-height. Use a line-height between 1.2 and 1.6 times normal can improve readability by creating space between lines of text. Learn more about line height.</p>
+<p>
+	When these tags are added to the structure of your document, screen readers are able to navigate through your web page, as an audio guide through the sections of your web page. 
+</p>
 
-<p>Styling for Links</p>
+<p>
+	This next section covers how to improve general accessibility with the use of HTML and CSS. 
+</p> 
 
-<p>When creating links for your website, you can remove the default underline and place a slight underline with CSS. The underline can be a couple pixels away from the text.</p> 
+<p>
+	Correctly Structure Headings in HTML files
+</p>
 
-<p>Some example CSS styling would be:</p>
+<p>
+	Screen reader users typically use the heading HTML structure to navigate through content. When headings are set up correctly on a website, screen readers can easily interpret the content of your website. 
+</p>
+
+<p>
+	For example, use the h1 tag for the main title of your page. Avoid using the h1 tag for anything other than the title of your website and other individual pages. 
+</p>
+
+<p>
+	If there are words on the page that you want to appear as big or bold, or as a header purely for decoration, make sure to style them appropriately with CSS with classes or ids, rather than the h1 tag. 
+</p> 
+
+<p>Include Alt Text Information for Images</p>
+
+<p>
+	Include the appropriate alt text information for images. When alt text is provided for images, screen readers can understand the message conveyed by the use of the images on the web page. For example, alt text information would be necessary for informative images, like infographics. Also, if the image includes text, that text should be included in the alt. For example:
+</p>
+
+<span> <img src="yosemite.gif" alt="Yosemite National Park"> </span>
+
+<p>
+	However if there is an image used purely for decorative purposes, the alt text can be left empty so that the screen reader can read other important information on the webpage. 
+</p>
+
+<p>
+	When an image is the only content of a link, the screen readers will read that file name if alt text is not included. When images are included as links, always provide alt text as well.
+</p>
+
+<p>Properly Describe Links On Your Webpage</p>
+
+<p>
+	Use descriptive text information that describes where the link goes to. Give your links descriptive names. 
+</p>
+
+<p>
+	For example, creating a “click here” link is not considered effective, and isn’t useful for a screen reader user. The most important context of the link should be introduced first, because screen readers will usually direct to the links list via searching the first letter. 
+</p>
+
+<span> For example, if you are pointing visitors to a page called “About Us”: </span>
+
+<span> Avoid saying: “Click here to read about our company.” </span>
+
+<span> Instead, say: “To learn more about our company, read About Us.” </span>
+
+<p> Color Contrast Tips </p>
+
+<p>
+	It’s important to make sure that the look and feel of your website works for all diverse users. There are ways to check if there is sufficient color contrast between your font color and background color.
+</p>
+
+<p>
+	Use Simulators for design reviews to create empathy and to view your web design from a different perspective. Check the color contrast to make sure that your web design meets the minimum color-contrast ratio of the WCAG 2.0 AA. 
+</p>
+
+<p>
+	The WCAG 2.0 AA color-contrast ratio is 4.5 to 1 for normal text and 3 to 1 for large text. 
+</p>
+
+<p> Two resources you can use: </p>
+
+<p> 
+	WebAIM Color Contrast Checker, a browser-based resource to test color codes specified in hexadecimal values. 
+</p>
+
+<p> 
+	The Paciello Group’s Colour Contrast Checker, an application available for Macs or PCs, which tests color codes with RGB values.  
+</p>
+
+<p> Testing Color Codes for Web Designs </p>
+
+<p> 
+	To check font colors against color backgrounds, you can use the resource WebAIM Color Contrast Checker to test samples. 
+</p>
+
+<p> Improving Font Readability using the Line-Height Property </p>
+
+<p>
+	Not only do you want your focus to be on making your font look nice, but it’s important to improve readability. You can do this by adjust the line-height. Use a line-height between 1.2 and 1.6 times normal can improve readability, creating space between lines of text. 
+</p>
+
+<p> Styling for Links </p>
+
+<p>
+	When creating links for your website, you can remove the default underline and place a slight underline with CSS. The underline can be a couple pixels away from the text. 
+</p>
+
+<p> Some example CSS styling would be: </p>
 
 <span>text-decoration: none</span>
 <span>border-bottom: 1px #000 solid</span>
 <span>padding-bottom: 2px</span>
 
-<p>When your link is in a hover or focus state, you want to make sure it stands out from the rest of the font on the page. A way to do this is to reverse the colours when on hover or focus.</p>
+<p>
+	Another option for styling links: when your link is in a hover or focus state, you want to make sure it stands out from the rest of the font on the page. A way to do this is to reverse the colours when on hover or focus. 
+</p>
  
-<p>The :hover class will change the look of a link when you hover over with your mouse. For users that are not using a mouse, use the :focus class.</p>
+<p>
+	The :hover class will change the look of a link when you hover over with your mouse. For users that are not using a mouse, use the :focus class. 
+</p>
 
-<p>You’ll want your links to change on focus and hover - and apply focus, hover, and active. Example code to reverse the colours would be:</p>
+<p>
+	So you’ll want your links to change on focus and hover - and apply focus, hover, and active. Example code to reverse the colours would be:
+</p>
 
 <code>
-a:link {
-	background: #fff;
-	color: #000;
-	font-weight: bold;
-	text-decoration: none; 
-	border-bottom: 1px #000 solid; 
-	padding-bottom: 2px;
+a:link { <br>
+	background: #fff; <br>
+	color: #000; <br>
+	font-weight: bold; <br>
+	text-decoration: none; <br>
+	border-bottom: 1px #000 solid; <br>
+	padding-bottom: 2px; <br>
 }
-a:visited {
-	background: #fff;
-	color: #800080;
-	font-weight: bold;
-	text-decoration: none; 
-	border-bottom: 1px #000 solid; 
-	padding-bottom: 2px;
+</code> <br>
+<code>
+a:visited { </code> <br>
+<code>
+	background: #fff; <br>
+	color: #800080; <br>
+	font-weight: bold; <br>
+	text-decoration: none; <br>
+	border-bottom: 1px #000 solid; <br>
+	padding-bottom: 2px; <br>
 }
-a:focus, a:hover, a:active {
-	background: #000;
-	color: #fff;
-	font-weight: bold;
-	text-decoration: none; 
-	border-bottom: 1px #000 solid; 
-	padding-bottom: 2px;
+</code> <br>
+<code>
+a:focus, a:hover, a:active { </code>
+<code>
+	background: #000; <br>
+	color: #fff; <br>
+	font-weight: bold; <br>
+	text-decoration: none; <br>
+	border-bottom: 1px #000 solid; <br>
+	padding-bottom: 2px; <br>
 }
 </code>
 
 <p>To hide content off the webpage for a screen reader to read, you can create a class to send the info off to the left. An example:</p>
 
 <code>
-.hidden {
-position: absolute;
-clip: rect(1px 1px 1px 1px) For IE6, IE7
-clip: rect(1px, 1px, 1px, 1px);
+.hidden { <br>
+position: absolute; <br>
+clip: rect(1px 1px 1px 1px) *For IE6, IE7 <br>
+clip: rect(1px, 1px, 1px, 1px); <br>
 }
 </code>
 
-<p>The clip property is deprecated, but still works with most browsers. The clip-path property is newer, but I found that it’s not currently working.</p>  
+<p>
+	The clip property is deprecated, but still works with most browsers. The clip-path property is newer, but I found that it’s not currently working as of yet.
+</p>  
 
-<p>In summary, here are some examples to add to your website to improve the accessibility for all users. Design accessibility ensures that the style and layout of web content includes all users.</p> 
+<p>
+	Here is a summary of WAI-ARIA and CSS tips to improve the accessibility of your web page. Adding these features will improve the experience for all of your diverse users. 
+</p> 
 
 </div>
