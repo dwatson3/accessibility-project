@@ -168,4 +168,4 @@ clip: rect(1px, 1px, 1px, 1px);
 
 The clip property is deprecated, but still works with most browsers. The clip-path property is newer, but I found that it’s not currently working as of yet.  
 
-Here is a summary of WAI-ARIA and CSS tips to improve the accessibility of your web page. Adding these features will improve the experience for all of your diverse users. 
+Here is a summary of WAI-ARIA and CSS tips to improve the accessibility of your web page. Adding these features will help to improve the experience for all of your diverse users. 
