@@ -102,7 +102,7 @@ input#input_field {
 }
 
 .email-content {
-  margin-left: 120px;
+  margin-left: 90px;
   margin-top: 70px;
   width: 80%;
 
@@ -110,9 +110,9 @@ input#input_field {
     // margin-top: 70px;
 }
 
-.email-further-reading {
-    margin-left: 50px;
-}
+// .email-further-reading {
+//     margin-left: 50px;
+// }
 
 .email-mic-button {
     position: relative;
@@ -138,6 +138,20 @@ p.p-twilio-left {
 .twilio-sidebar-down {
     // position: relative;
     // top: 88px;
+}
+
+span.email-further-reading {
+    font-weight: bold;
+    font-size: 0.83em;
+    position: relative;
+    bottom: 10px;
+}
+
+span.email-report {
+    font-weight: bold;
+    font-size: 1.12em;
+    position: relative;
+    bottom: 5px;
 }
 
 // a.twilio-project-link {
