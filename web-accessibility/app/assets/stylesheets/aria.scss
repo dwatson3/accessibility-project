@@ -132,7 +132,7 @@ a.navbar-brand {
 
 #aria-content {
 	margin-left: 90px !important;
-	margin-top: 50px;
+	// margin-top: 50px;
 	// position: relative;
 	width: 80%;
 }
@@ -160,3 +160,10 @@ a.navbar-brand {
 p.aria-move-p {
 	margin-top: 20px;	
 }
+
+.index-bookmark {
+    border: 2px $grey solid;
+    color: $black;
+    margin-right: 10px;
+}
+
