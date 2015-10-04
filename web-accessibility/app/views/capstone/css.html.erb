@@ -199,7 +199,7 @@
 </span>
 </div>
 
-<div class="further-reading aria-tutorial aria-content col-md-8">
+<div class="further-reading aria-tutorial aria-content col-md-8 col-offset-2">
 
 <span class="aria-further-reading"> Further Reading: </span> <br>
 
@@ -272,7 +272,6 @@
 
 <p> The types are: </p>
 
-<p>
 	<ul>
 	 <li>banner, which is a header tag </li>
 	 <li> complementary, which is an aside tag </li>
@@ -283,13 +282,13 @@
 	 <li> search, which is form or div tag </li>
 	 <li> and application, which is a div tag </li>
   </ul> 
-</p>
+
 
 <p class="aria-move-p">
 	For the main heading title of your webpage, apply a div role="banner" to structure your title content.
 </p>
 
-<p>	
+<p class="aria-move-p">	
 	For example, div role="banner" // Banner Here </div>
 </p>
 
@@ -301,6 +300,8 @@
 	For the main content of your web page, apply a div role="main" tag in order to set hierarchal importance on your page.
 </p>  
 
+
+<div id="aria-content" class="col-md-8">
 <p>
 	For the secondary content on your web page, apply a div role="complementary".
 </p> 
@@ -321,12 +322,20 @@
 	When these tags are added to the structure of your document, screen readers are able to navigate through your web page, as an audio guide through the sections of your web page. 
 </p>
 
+<p class="aria-move-p">
+	<strong>
+	Improving Accessibility with HTML and CSS
+	</strong>
+</p>
+
 <p>
 	This next section covers how to improve general accessibility with the use of HTML and CSS. 
 </p> 
 
-<p>
-	Correctly Structure Headings in HTML files
+<p class="aria-move-p">
+	<strong>
+	Structure Headings Correctly in HTML files
+	</strong>
 </p>
 
 <p>
@@ -341,15 +350,19 @@
 	If there are words on the page that you want to appear as big or bold, or as a header purely for decoration, make sure to style them appropriately with CSS with classes or ids, rather than the h1 tag. 
 </p> 
 
-<p>Include Alt Text Information for Images</p>
+<p class="aria-move-p">
+	<strong>
+		Include Alt Text Information for Images
+	</strong>
+</p>
 
 <p>
 	Include the appropriate alt text information for images. When alt text is provided for images, screen readers can understand the message conveyed by the use of the images on the web page. For example, alt text information would be necessary for informative images, like infographics. Also, if the image includes text, that text should be included in the alt. For example:
 </p>
 
-<span> <img src="yosemite.gif" alt="Yosemite National Park"> </span>
+<span> < img src="yosemite.gif" alt="Yosemite National Park" > </span>
 
-<p>
+<p class="aria-move-p">
 	However if there is an image used purely for decorative purposes, the alt text can be left empty so that the screen reader can read other important information on the webpage. 
 </p>
 
@@ -357,7 +370,11 @@
 	When an image is the only content of a link, the screen readers will read that file name if alt text is not included. When images are included as links, always provide alt text as well.
 </p>
 
-<p>Properly Describe Links On Your Webpage</p>
+<p class="aria-move-p">
+	<strong>
+		Properly Describe Links On Your Webpage
+	</strong>
+</p>
 
 <p>
 	Use descriptive text information that describes where the link goes to. Give your links descriptive names. 
@@ -373,7 +390,11 @@
 
 <span> Instead, say: “To learn more about our company, read About Us.” </span>
 
-<p> Color Contrast Tips </p>
+<p class="aria-move-p"> 
+	<strong>
+		Color Contrast Tips 
+	</strong>
+</p>
 
 <p>
 	It’s important to make sure that the look and feel of your website works for all diverse users. There are ways to check if there is sufficient color contrast between your font color and background color.
@@ -387,7 +408,11 @@
 	The WCAG 2.0 AA color-contrast ratio is 4.5 to 1 for normal text and 3 to 1 for large text. 
 </p>
 
-<p> Two resources you can use: </p>
+<p class="aria-move-p"> 
+	<strong>
+		Two resources you can use: 
+	</strong>
+</p>
 
 <p> 
 	WebAIM Color Contrast Checker, a browser-based resource to test color codes specified in hexadecimal values. 
@@ -397,19 +422,31 @@
 	The Paciello Group’s Colour Contrast Checker, an application available for Macs or PCs, which tests color codes with RGB values.  
 </p>
 
-<p> Testing Color Codes for Web Designs </p>
+<p class="aria-move-p">
+	<strong> 
+		Testing Color Codes for Web Designs 
+	</strong>
+</p>
 
 <p> 
 	To check font colors against color backgrounds, you can use the resource WebAIM Color Contrast Checker to test samples. 
 </p>
 
-<p> Improving Font Readability using the Line-Height Property </p>
+<p class="aria-move-p"> 
+	<strong>
+		Improving Font Readability using the Line-Height Property 
+	</strong>
+</p>
 
 <p>
 	Not only do you want your focus to be on making your font look nice, but it’s important to improve readability. You can do this by adjust the line-height. Use a line-height between 1.2 and 1.6 times normal can improve readability, creating space between lines of text. 
 </p>
 
-<p> Styling for Links </p>
+<p class="aria-move-p"> 
+	<strong>
+		Styling for Links 
+	</strong>
+</p>
 
 <p>
 	When creating links for your website, you can remove the default underline and place a slight underline with CSS. The underline can be a couple pixels away from the text. 
@@ -421,7 +458,7 @@
 <span>border-bottom: 1px #000 solid</span>
 <span>padding-bottom: 2px</span>
 
-<p>
+<p class="aria-move-p">
 	Another option for styling links: when your link is in a hover or focus state, you want to make sure it stands out from the rest of the font on the page. A way to do this is to reverse the colours when on hover or focus. 
 </p>
  
@@ -481,7 +518,7 @@ clip: rect(1px, 1px, 1px, 1px); <br>
 </p>  
 
 <p>
-	Here is a summary of WAI-ARIA and CSS tips to improve the accessibility of your web page. Adding these features will improve the experience for all of your diverse users. 
+	This concludes the summary of WAI-ARIA and CSS tips to improve accessibility for your web page. Adding these features will improve the experience for all of your diverse users. 
 </p> 
 
 </div>
