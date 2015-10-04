@@ -14,15 +14,23 @@ $white: #fff;
 
 $weight: bold;
 
-
-span.news-title {
+p.aria-news-title {
 	font-size: 2em;
-	position: relative;
+	// margin-top: 50px;
+	// padding: none;
+	// position: relative;
 	// right: 160px;
 }
 
-span.news-subheader {
+span.news-article-authors {
+	margin-top: 10px;
+	position: relative;
+}
+
+p.news-subheader {
 	font-size: 1.17em;
+	position: relative;
+	margin-bottom: 8px;
 }
 
 .hidden {
@@ -55,4 +63,100 @@ a.aria-link:focus, a.aria-link:hover {
 	padding-bottom: 2px;
 	padding-left: 2px;
 	padding-right: 2px;
+}
+
+@media(min-width:999px) {
+    .side-nav {
+        background-color: $yellow;
+        border-radius: 0;
+        border: 5px $grey solid;
+
+        bottom: 0;
+        font-weight: bold;
+        left: 225px;
+        margin-left: -200px;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+
+        position: fixed;
+        top: 88px;        
+        width: 240px;
+    }
+
+       .side-nav>li {
+        border: 2px $grey solid;
+    }
+
+    .side-nav>li>a {
+        color: $black;
+        width: 240px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        // background-color: #000 !important;
+        background-color: $black;
+        color: $white;
+    }
+}
+
+.side-nav>li>ul {
+    padding: 0;
+}
+
+.side-nav>li>ul>li>a {
+    color: $black;
+    display: block;
+    padding: 10px 15px 10px 38px;
+    
+    text-decoration: none;
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
+
+a.navbar-brand {
+    color: $black !important;
+    font-weight: bold;
+    left: 25px;
+    position: relative;
+}
+
+.navbar-inverse {
+	background-color: none;
+}
+
+#aria-content {
+	margin-left: 90px !important;
+	margin-top: 50px;
+	// position: relative;
+	width: 80%;
+}
+
+.aria-tutorial {
+	@extend #aria-content;
+}
+
+.aria-p-one {
+	margin-top: 25px;
+}
+
+.aria-p-intro {
+	margin-bottom: 20px;
+}
+
+.aria-further-reading {
+	@extend .index-further-reading;
+}
+
+.aria-access-report {
+	@extend .index-access-report;
+}
+
+p.aria-move-p {
+	margin-top: 20px;	
 }

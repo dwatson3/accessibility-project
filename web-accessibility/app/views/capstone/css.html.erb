@@ -54,16 +54,19 @@
 			</ul>
 		</div> <!-- closes sidebar-wrapper -->
 
-		<div class="row col-md-8 col-offset-2 aria-css-content aria-css-down">
+	<div id="aria-content" class="col-md-8 col-offset-2">
 
-		<h1 class="translate-title"> <i class="fa fa-bookmark" aria-hidden="true"> WIA-ARIA & CSS Demo </h1>
+		<h1 class="translate-title"> <i class="fa fa-bookmark" aria-hidden="true"></i> WAI-ARIA and CSS Demo </h1>
+
+		<hr class="translate-hr col-md-6"> <br><br> 
+
+		<p class="aria-p-intro"> This news article demo incorporates WAI-ARIA and CSS features. <br>Although they largely look to go hidden, they are subtle yet vital <br> additions for users with visual disabilities. </p> 
 			
-			<hr class="translate-hr col-md-7"> <br>
 			
-			<span class="news-title" role="banner"> Google Brings in Chief for Self-Driving Cars </span>
+			<p class="aria-news-title" role="banner"> Google Brings in Chief for Self-Driving Cars </p>
 			<br>
 
-			<span class="news-subheader" role="complementary"> Hiring of Detroit veteran John Krafcik indicates keenness to commercialize the technology </span>
+			<p class="news-subheader" role="complementary"> Hiring of Detroit veteran John Krafcik indicates keenness to commercialize the technology </p>
 
 			<%= image_tag("road_ready_small.jpg", :title => "Google Self Driving Car") %>
 			<br>
@@ -73,9 +76,9 @@
 
 			<span class="news-article-date"> Sept. 13, 2015 11:04p.m. ET </span>	
 
-		<div role="main" class="article-content col-md-9">
+		<div role="main" class="article-content">
 
-			<p> 
+			<p class="aria-p-one"> 
 				<%= link_to "Google Inc.", "http://quotes.wsj.com/GOOG", :class => "aria-link aria-reverse-color", :target => "_blank" %>
 			
 				is ready to turn its self-driving car technology into a business and has hired an auto-industry veteran to run it. 
@@ -196,17 +199,21 @@
 </span>
 </div>
 
-<div class="further-reading col-md-8">
+<div class="further-reading aria-tutorial aria-content col-md-8">
 
-<span>
+<span class="aria-further-reading"> Further Reading: </span> <br>
+
+<span class="aria-access-report aria-move-p">
+	<strong>
 	Applying WAI-ARIA and CSS to improve Web Accessibility
+	</strong>
 </span>
 
 <p>
 	In this tutorial, I’ll be going over how to apply WIA-ARIA standards as well as CSS features to improve the accessibility of your webpage.
 </p> 
 
-<p>What is WAI-ARIA, and what is it used for?
+<p class="aria-move-p"><strong>What is WAI-ARIA, and what is it used for?</strong>
 </p>
 
 <p>
@@ -217,8 +224,10 @@
 	WAI-ARIA standards help screen reader users structure web content and navigate through sections of web content. 
 </p> 
 
-<p>
+<p class="aria-move-p">
+	<strong>
 	What are screen readers?
+	</strong>
 </p> 
 
 <p>
@@ -241,6 +250,12 @@
 	Testing your web content with screen readers gives developers the chance to evaluate content from a perspective of a blind user. Screen readers are good evaluators as to how accurate your image alternative text is, as well as identifying any issues involving elements, reading order, etc on a webpage. 
 </p>
 
+<p class="aria-move-p">
+	<strong>
+	Introduction to ARIA Landmark Roles
+	</strong>
+</p>
+
 <p>
 	The ARIA navigation feature I will be covering in this tutorial are ARIA landmark roles. 
 </p>
@@ -259,47 +274,47 @@
 
 <p>
 	<ul>
-	 <li>banner, which is <header> </li>
-	 <li> complementary, which is <aside> </li>
-	 <li> contentinfo, which is <div> acting as the footer </li>
-	 <li> form, which is <form> or <div> </li>
-	 <li> main, which is <main> </li>
-	 <li> navigation, which is <nav> </li>
-	 <li> search, which is <form> or <div> </li>
-	 <li> and application, which is <div> </li>
+	 <li>banner, which is a header tag </li>
+	 <li> complementary, which is an aside tag </li>
+	 <li> contentinfo, which is a div tag acting as the footer </li>
+	 <li> form, which is form or div tag </li>
+	 <li> main, which is main </li>
+	 <li> navigation, which is a nav tag </li>
+	 <li> search, which is form or div tag </li>
+	 <li> and application, which is a div tag </li>
   </ul> 
 </p>
 
-<p>
-	For the main heading title of your webpage, apply a <div role="banner"> to structure your title content.
+<p class="aria-move-p">
+	For the main heading title of your webpage, apply a div role="banner" to structure your title content.
 </p>
 
 <p>	
-	For example, <div role="banner"> Banner Here </div>
+	For example, div role="banner" // Banner Here </div>
 </p>
 
 <p>
-	For the navigation bar of your web page, apply a <div role="navigation"> for screen readers to access the navigation bar. 
+	For the navigation bar of your web page, apply a div role="navigation" tag for screen readers to access the navigation bar. 
 </p>
 
 <p>
-	For the main content of your web page, apply a <div role="main"> in order to set hierarchal importance on your page.
+	For the main content of your web page, apply a div role="main" tag in order to set hierarchal importance on your page.
 </p>  
 
 <p>
-	For the secondary content on your web page, apply a <div role="complementary">.
+	For the secondary content on your web page, apply a div role="complementary".
 </p> 
 
 <p>
-	If you have a form on your web page, apply a <div role="form">. 
+	If you have a form on your web page, apply a div role="form". 
 </p>
 
 <p>
-	For a search form, place a <div role="search"> around the search bar. 
+	For a search form, place a div role="search" around the search bar. 
 </p>
 
 <p>
-	For the footer of your webpage that usually contains contact or copyright information, place a <div role="contentinfo"> around it.
+	For the footer of your webpage that usually contains contact or copyright information, place a div role="contentinfo" around it.
 </p> 
 
 <p>
