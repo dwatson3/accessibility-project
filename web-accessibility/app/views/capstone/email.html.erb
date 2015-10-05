@@ -60,14 +60,18 @@
   Web Speech API Demonstration</h1>
 <hr>
 
-<div id="status">
-</div>
-<p>
-<div id="results">
-  <span id="final_span" style="color:black"></span>
-  <span id="interim_span" style="color:gray"></span>
-</div>
+<!-- <div class="col-md-1"> -->
+  <div id="status">
+  </div>
+  <p>
+  <div id="results">
+    <span id="final_span" style="color:black"></span>
+    <span id="interim_span" style="color:gray"></span>
+  </div>
+<!-- </div> -->
+
 <!-- <button onclick="microphoneButton()" style="border: 0; background-color:transparent"> -->
+<!-- <div class="col-md-1"> -->
   <button class="email-mic-button">
    <!--  <img id="status_img" src="mic.gif" alt="Start"> -->
    <%= image_tag("mic.gif") %>
@@ -76,6 +80,7 @@
   <button onclick="emailButton()" class="create-email-button">
     Create Email
   </button>
+<!-- </div> -->
 
 <div id="div_language">
   <select id="select_language" onchange="updateCountry()"></select>
@@ -97,16 +102,18 @@
 
     Go to <%= link_to "Twilio Demo",
     capstone_twilio_path, {:class => "twilio-project-link"} %>
-  </p>
+  <!-- </p> -->
 
-  <p class="p-translate-right right">
-
+  <!-- <p class="p-translate-right right"> -->
+  <span class="right">
   Go to <%= link_to "Translate Demo",
   capstone_translate_path, {:class => "translate-project-link"} %>
     
     <i class="fa fa-long-arrow-right" aria-hidden="true"> </i>
-  </p>
+  <!-- </p> -->
 </span>
+
+</p>
 
 <span class="email">
   
