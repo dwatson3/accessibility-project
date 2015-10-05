@@ -1,18 +1,19 @@
 Tutorial: 
-How to Create a Speech To Text API for Email Messaging. 
-The importance of Speech Recognition Software.
+How to Use a Speech To Text API for Email Messaging. 
+
+How Speech Recognition Software works.
 
 What is speech recognition software?
 
 Speech recognition software allows users the ability to process spoken word into text on the screen. It replaces the need to type words with the keyboard.
 
-Popular speech recognition technologies (for both users with and without disabilities) include foreign language learning, voice activated products for the blind, and writing software to help improve writing skills for individuals with physical impairments. 
+Popular speech recognition technologies (for both users with and without disabilities) include foreign language learning, voice activated products for the blind, and writing software to help improve writing skills for users with physical impairments.
+ 
+Speech Recognition software helps people improve their access to the computer, and can help users with various disabilities that normally prevent access, including: limited motor skills, repetitive strain injuries (including carpal tunnel syndrome), limited in the English language, vision impairments, physical disabilities, and learning disabilities such as dyslexia and dysgraphia.
 
-This software helps people improve their access to the computer, and can help users with various disabilities that normally prevent access, including: limited motor skills, repetitive strain injuries (including carpal tunnel syndrome), limited in the English language, vision impairments, physical disabilities, and learning disabilities such as dyslexia and dysgraphia.
+Some benefits of this software include skill improvement in writing abilities, writing production, and core reading. In order to fully utilize the best performance from speech recognition, it requires a quiet environment so that a computer microphone can clearly understand your voice.
 
-Some benefits with this software include skill improvement in writing abilities, writing production, and core reading. In order to fully utilize the best performance from speech recognition, it requires a quiet environment so that your computer microphone can clearly understand you.
-
-This tutorial shows you how to code a simple speech-to-text app to write and send emails, with the use of a google speech-to-text API. 
+This tutorial shows you how to code a simple speech-to-text application to write and send emails, with the use of a google speech-to-text API. 
 
 Directions:
 
@@ -31,8 +32,6 @@ Our “webspeech.js” library implements a WebSpeechRecognition object, include
 The WebSpeechRecognition object directs output to our “input_field”.
 
 You’ll notice this code below - the div id for “div_language” in the “codelab3.html” file. The codelab3.html calls in the webspeech.js file.
-
-
 
 Step 2: Add the microphone button to apply the start/stop recognition.
 
