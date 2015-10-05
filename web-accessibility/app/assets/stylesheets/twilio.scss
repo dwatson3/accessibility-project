@@ -82,6 +82,17 @@ a.navbar-brand {
 	background-color: none;
 }
 
+.twilio-mic {
+    margin-bottom: 10%;
+    position: relative;
+    // right: 640px;
+    // text-align: center;
+}
+
+.demo {
+    margin-top: 30px;
+}
+
 .down {
     // position: relative;
     top: 45%;
@@ -123,6 +134,10 @@ div#twilio-content {
 	// margin-top: 70px;
 	// position: relative;
     width: 80%;
+}
+
+div.twilio-to-index-tag {
+
 }
 
 span.navbar-brand {

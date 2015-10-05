@@ -54,7 +54,7 @@
 		</ul>
 	</div> <!-- closes sidebar-wrapper -->
 
-<div id="twilio-content" class="col-md-8">
+<div id="twilio-content" class="col-md-6">
 
 	<h1 class="twilio-title">
 		<i class="fa fa-bookmark index-bookmark" aria-hidden="true"> </i>
@@ -64,24 +64,25 @@
 		<p></p>
 
 	<form action="http://localhost:3000/capstone/twilio" method="get">
-  	<input name="q" id="input_field" size="100">
+  	<input name="q" id="input_field" size="70">
 	</form>
 	
-	<button onclick="reco.toggleStartStop()" style="border: 0; background-color:transparent">
-		<%= image_tag "mic.gif" %>
+	<button onclick="reco.toggleStartStop()" style="border: 0; background-color:transparent; text-align:center">
+		<%= image_tag "mic.gif", :class => "twilio-mic" %>
 	</button>
 
-<p class="twilio-move-p">
+
+<p class="twilio-move-p col-md-8" style="margin-top:40px;">
 		How to use Google Web Speech API with Twilio API. This app uses Google Speech Recognition Software to send as output to a mobile phone with the Twilio API. 
 	</p>
 
-	<p class="twilio-move-p">
+	<p class="twilio-move-p col-md-8">
 		This project was inspired by the use of technology being cross-platform. For example, this demonstration is being used from my laptop, but it can be used in a browser on a mobile phone.
 	</p>
 
 	<br>
 
-	<span tag="twilio-to-index-tag">
+	<div class="twilio-to-index-tag col-md-8">
 
 		<p class="p-twilio-left left">
 			<i class="fa fa-long-arrow-left" aria-hidden="true"> </i>
@@ -94,7 +95,7 @@
 			  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 		</p>
 
-	</span>	
+	</div>	
 
 <div class="twilio-further-reading">
 	
